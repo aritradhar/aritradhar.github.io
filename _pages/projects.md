@@ -3,7 +3,7 @@ layout: page
 title: projects
 permalink: /projects/
 description: Under Construction
-nav: true
+nav: false
 display_categories: []
 horizontal: false
 ---

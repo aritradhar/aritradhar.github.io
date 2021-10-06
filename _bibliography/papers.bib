@@ -231,7 +231,7 @@ year={2020}
                Kari Kostiainen and
                Srdjan Capkun},
   title     = {IntegriKey: End-to-End Integrity Protection of User Input},
-  journal   = {{IACR} Cryptol. ePrint Arch.},
+  journal   = {IACR Cryptol. ePrint Arch.},
   pages     = {1245},
   year      = {2017},
   url       = {http://eprint.iacr.org/2017/1245},
@@ -239,24 +239,23 @@ year={2020}
   biburl    = {https://dblp.org/rec/journals/iacr/DharYKC17.bib},
   bibsource = {dblp computer science bibliography, https://dblp.org}
 }
-@article{DBLP:journals/iacr/MateticAKDSGJC17,
-  author    = {Sinisa Matetic and
-               Mansoor Ahmed and
-               Kari Kostiainen and
-               Aritra Dhar and
-               David M. Sommer and
-               Arthur Gervais and
-               Ari Juels and
-               Srdjan Capkun},
-  title     = {{ROTE:} Rollback Protection for Trusted Execution},
-  journal   = {{IACR} Cryptol. ePrint Arch.},
-  pages     = {48},
-  year      = {2017},
-  url       = {http://eprint.iacr.org/2017/048},
-  timestamp = {Mon, 11 May 2020 15:57:15 +0200},
-  biburl    = {https://dblp.org/rec/journals/iacr/MateticAKDSGJC17.bib},
-  bibsource = {dblp computer science bibliography, https://dblp.org}
+
+
+@article {203712,
+author = {Sinisa Matetic and Mansoor Ahmed and Kari Kostiainen and Aritra Dhar and David Sommer and Arthur Gervais and Ari Juels and Srdjan Capkun},
+title = {{ROTE}: Rollback Protection for Trusted Execution},
+journal = {26th USENIX Security Symposium (USENIX Security)},
+year = {2017},
+isbn = {978-1-931971-40-9},
+address = {Vancouver, BC},
+pages = {1289-1306},
+html = {https://www.usenix.org/conference/usenixsecurity17/technical-sessions/presentation/matetic},
+abstract={Security architectures such as Intel SGX need protection against rollback attacks, where the adversary violates the integrity of a protected application state by replaying old persistently stored data or by starting multiple application instances. Successful rollback attacks have serious consequences on applications such as financial services. In this paper, we propose a new approach for rollback protection on SGX. The intuition behind our approach is simple. A single platform cannot efficiently prevent rollback, but in many practical scenarios, multiple processors can be enrolled to assist each other. We design and implement a rollback protection system called ROTE that realizes integrity protection as a distributed system. We construct a model that captures adversarial ability to schedule enclave execution and show that our solution achieves a strong security property: the only way to violate integrity is to reset all participating platforms to their initial state. We implement ROTE and demonstrate that distributed rollback protection can provide significantly better performance than previously known solutions based on local non-volatile memory.},
+pdf={https://www.usenix.org/system/files/conference/usenixsecurity17/sec17-matetic.pdf},
+abbr={USENIX 2017}
 }
+
+
 
 @article{DBLP:conf/w4a/DharNY16,
   author    = {Aritra Dhar and

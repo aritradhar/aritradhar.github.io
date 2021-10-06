@@ -1,72 +1,392 @@
----
----
 
-@string{aps = {American Physical Society,}}
+@article{schneider2021pie,
+      title={PIE: A Platform-wide TEE}, 
+      author={Moritz Schneider and Aritra Dhar and Ivan Puddu and Kari Kostiainen and Srdjan Capkun},
+      abstract={While modern computing architectures rely on specialized hardware such as accelerators to provide performance and functionality, trusted execution environments (TEEs), one of the most promising recent developments in security, can only protect code confined in the CPU, limiting TEEs potential and applicability to a handful of applications. We observe that the TEEs' hardware trusted computing base (TCB) is fixed at design time, forcing users to rely on (mostly untrustworthy) software to allow peripherals into the TEE. Based on this observation, we propose PIE, a secure platform design with a configurable hardware and software TCB, which allows us to support specialized hardware while ensuring the least privilege principle. We introduce two new security properties relevant to such systems: platform-wide attestation and platform awareness. Platform-wide attestation allows to remotely verify the platform's current state, including the state of specialized hardware devices and how they are connected with each other, whereas platform awareness defines how the enclave reacts upon a change in connected devices. Together, these allow to attest to the hardware configuration of a system and check that only the trusted hardware with the right version of its firmware is part of the TCB (platform-wide attestation) and will stay part of the TCB for the whole execution (platform awareness). Finally, we present a prototype of PIE based on RISC-V's Keystone to show that such systems are feasible with only around 600 lines added to the software TCB, without compromising performance.},
+      booktitle={CHES 2022 (to appear)},
+      journal={CHES 2022 (to appear)},
+      organization={IACR},
+year={2022},
+      abbr={CHES 2022},
+      html={https://arxiv.org/abs/2010.10416},
+      pdf={https://arxiv.org/pdf/2010.10416.pdf},
+      selected={true}
+      }
 
-@book{einstein1956investigations,
-  bibtex_show={true},
-  title={Investigations on the Theory of the Brownian Movement},
-  author={Einstein, Albert},
-  year={1956},
-  publisher={Courier Corporation,}
+
+@phdthesis{dhar2021building,
+ abbr={Thesis 2021},
+  title={Building Trust in Modern Computing Platforms},
+  author={Dhar, Aritra},
+ journal={PhD Thesis, ETH Zurich},
+abstract={User interfaces (UI) are essential parts of modern complex computing platforms as it dictates how humans provide inputs to these systems and interpret output from them. Many remote safety and security-critical cyber-physical systems such as industrial PLCs (in manufacturing, power plants, etc.), medical implants are accessible through rich UIs over browsers or dedicated applications that are running on commodity systems or hosts. Similarly, e-banking, e-voting, social networks, and many other remote applications and services are critically dependent on UIs for user authentication and IO. An attacker-controlled host can not only observe user's IO data but also can modify them undetected. Loss of integrity and confidentiality of user inputs can lead to catastrophic failure of critical infrastructures, loss of human lives, leakage of sensitive data. The problem of secure communication between a user and an end-system is known as trusted path. Such attacks are not far-fetched as modern software and hardware systems are incredibly complex and span over millions of lines of code. Hence the users are bound to trust a massive trusted computing base or TCB. Exploiting software vulnerabilities of the OS, hypervisors, database systems are very prevalent. Recent technologies such as Trusted execution environments (TEEs) address this problem by reducing the TCB by running isolated environments on the CPU cores, known as enclaves, that are isolated from the OS or hypervisor. However, TEEs do not solve the trusted path problem as TEEs depend on the OS to communicate to the external IO devices. Moreover, the remote attestation mechanism by which a verifier can ensure that she is communicating with the proper enclave is vulnerable to relay attack. In the context of disaggregated computing architecture in modern data centers, the security properties of traditional TEE are insufficient as the trusted path application involves sensitive data not only on the CPU cores but also on the specialized external hardware like accelerators.
+<p></p>
+In this thesis, we propose mechanisms to build trust in modern computing platforms by addressing the trusted path problem, and we make the following contributions. First, we analyze existing trusted path systems and found several attacks that compromise user IO data integrity and confidentiality. We are the first to analyze the trusted path problem to find a set of essential security properties and implement them in a system named ProtectIOn using a trusted embedded device as an intermediary. This trusted device intercepts all IO data and overlays secure UI on the display signal. Next, we look into Intel SGX and investigate how one can integrate a trusted path solution to TEEs. We notice that the relay attack on the SGX remote attestation can be detrimental to the trusted path security properties. We design ProximiTEE, a system that uses distance bounding to verify physical proximity to an SGX processor. We also show how the distance bounding mechanism can be used in a high frequency to allocate or revoke platforms in data centers without relying on an online PKI. Finally, we look into the disaggregated computing model of the modern data centers where the TEEs are insufficient as the computation is no longer limited to the CPU cores but several external devices such as GPUs, accelerators, etc. We propose our system PIE based on RISC-V architecture that combines the enclaves running on the CPU and firmware external hardware to a single attestable domain that we call platform-wide enclaves. Inside these platform-wide enclaves, individual binaries (enclaves and firmware) can be remotely attested.},
+  year={2021},
+  school={ETH Zurich},
+journal={PhD Thesis, ETH Zurich},
+html={https://www.research-collection.ethz.ch/handle/20.500.11850/487786},
+pdf={https://www.research-collection.ethz.ch/bitstream/handle/20.500.11850/487786/thesis_w_cover.pdf?sequence=2&isAllowed=y},
+selected={true}
 }
 
-@article{einstein1950meaning,
-  abbr={AJP},
-  bibtex_show={true},
-  title={The meaning of relativity},
-  author={Einstein, Albert and Taub, AH},
-  journal={American Journal of Physics,},
-  volume={18},
-  number={6},
-  pages={403--404},
-  year={1950},
-  publisher={American Association of Physics Teachers,}
+
+
+@article{10.1109/MSEC.2020.2990230,
+author = {Kostiainen, Kari and Dhar, Aritra and Capkun, Srdjan},
+title = {Dedicated Security Chips in the Age of Secure Enclaves},
+year = {2020},
+issue_date = {Sept.-Oct. 2020},
+publisher = {IEEE Educational Activities Department},
+address = {USA},
+volume = {18},
+number = {5},
+issn = {1540-7993},
+url = {https://doi.org/10.1109/MSEC.2020.2990230},
+doi = {10.1109/MSEC.2020.2990230},
+abstract = {Secure enclave architectures have become prevalent in modern CPUs. Enclaves provide
+a flexible way to implement various hardware-assisted security services. But special-purpose
+security chips can still have advantages. Interestingly, dedicated security chips
+can also assist enclaves and improve their security.},
+journal = {IEEE Security and Privacy},
+selected={true},
+abbr={S&P Mag 2020},
+html={https://dl.acm.org/doi/10.1109/MSEC.2020.2990230},
+pdf={https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9095263},
+month = sep,
+pages = {38–46},
+numpages = {9}
 }
 
-@article{PhysRev.47.777,
-  abbr={PhysRev},
-  title={Can Quantum-Mechanical Description of Physical Reality Be Considered Complete?},
-  author={Einstein, A. and Podolsky, B. and Rosen, N.},
-  abstract={In a complete theory there is an element corresponding to each element of reality. A sufficient condition for the reality of a physical quantity is the possibility of predicting it with certainty, without disturbing the system. In quantum mechanics in the case of two physical quantities described by non-commuting operators, the knowledge of one precludes the knowledge of the other. Then either (1) the description of reality given by the wave function in quantum mechanics is not complete or (2) these two quantities cannot have simultaneous reality. Consideration of the problem of making predictions concerning a system on the basis of measurements made on another system that had previously interacted with it leads to the result that if (1) is false then (2) is also false. One is thus led to conclude that the description of reality as given by a wave function is not complete.},
-  journal={Phys. Rev.,},
-  volume={47},
-  issue={10},
-  pages={777--780},
-  numpages={0},
-  year={1935},
-  month={May},
-  publisher=aps,
-  doi={10.1103/PhysRev.47.777},
-  url={http://link.aps.org/doi/10.1103/PhysRev.47.777},
-  html={https://journals.aps.org/pr/abstract/10.1103/PhysRev.47.777},
-  pdf={example_pdf.pdf},
-  selected={true}
+
+
+@article{10.1145/3374664.3375726,
+author = {Dhar, Aritra and Puddu, Ivan and Kostiainen, Kari and Capkun, Srdjan},
+title = {ProximiTEE: Hardened SGX Attestation by Proximity Verification},
+year = {2020},
+isbn = {9781450371070},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3374664.3375726},
+doi = {10.1145/3374664.3375726},
+html={https://dl.acm.org/doi/10.1145/3374664.3375726},
+pdf={https://eprint.iacr.org/2018/902.pdf},
+abstract = {Intel SGX enables protected enclaves on untrusted computing platforms. An important
+part of SGX is its remote attestation mechanism that allows a remote verifier to check
+that the expected enclave was correctly initialized before provisioning secrets to
+it. However, SGX attestation is vulnerable to relay attacks where the attacker, using
+malicious software on the target platform, redirects the attestation and therefore
+the provisioning of confidential data to a platform that he physically controls. Although
+relay attacks have been known for a long time, their consequences have not been carefully
+examined. In this paper, we analyze relay attacks and show that redirection increases
+the adversary's abilities to compromise the enclave in several ways, enabling for
+instance physical and digital side-channel attacks that would not be otherwise possible.We
+propose ProximiTEE, a novel solution to prevent relay attacks. Our solution is based
+on a trusted embedded device that is attached to the target platform. Our device verifies
+the proximity of the attested enclave, thus allowing attestation to the intended enclave
+regardless of malicious software, such as a compromised OS, on the target platform.
+The device also performs periodic proximity verification which enables secure enclave
+revocation by detaching the device. Although proximity verification has been proposed
+as a defense against relay attacks before, this paper is the first to experimentally
+demonstrate that it can be secure and reliable for TEEs like SGX. Additionally, we
+consider a stronger adversary that has obtained leaked SGX attestation keys and emulates
+an enclave on the target platform. To address such emulation attacks, we propose a
+second solution where the target platform is securely initialized by booting it from
+the attached embedded device.},
+booktitle = {Proceedings of the Tenth ACM Conference on Data and Application Security and Privacy},
+pages = {5–16},
+numpages = {12},
+location = {New Orleans, LA, USA},
+journal = {CODASPY '20 (Best Paper Award)},
+abbr={CODASPY 2020},
+year={2020}
 }
 
-@article{einstein1905molekularkinetischen,
-  title={{\"U}ber die von der molekularkinetischen Theorie der W{\"a}rme geforderte Bewegung von in ruhenden Fl{\"u}ssigkeiten suspendierten Teilchen},
-  author={Einstein, A.},
-  journal={Annalen der physik,},
-  volume={322},
-  number={8},
-  pages={549--560},
-  year={1905},
-  publisher={Wiley Online Library}
+
+@article{DBLP:conf/ndss/DharUKC20,
+  author    = {Aritra Dhar and
+               Enis Ulqinaku and
+               Kari Kostiainen and
+               Srdjan Capkun},
+  title     = {ProtectIOn: Root-of-Trust for {IO} in Compromised Platforms},
+  journal = {27th Annual Network and Distributed System Security Symposium, {NDSS}},
+  publisher = {The Internet Society},
+  year      = {2020},
+  selected={true},
+  abbr={NDSS 2020},
+  abstract={Security and safety-critical remote applications such as e-voting, online banking, industrial control systems and medical devices rely upon user interaction that is typically performed through web applications. Trusted path to such remote systems is critical in the presence of an attacker that controls the computer that the user operates. Such an attacker can observe and modify any IO data without being detected by the user or the server. We investigate the security of previous research proposals and observe several drawbacks that make them vulnerable to attacks. Based on these observations we identify novel requirements for secure IO operation in the presence of a compromised host.
+
+As a solution, we propose ProtectIOn, a system that ensures IO integrity using a trusted low-TCB device that sits between the attacker-controlled host and the IO devices. ProtectIOn intercepts the display signal and user inputs from the keyboard and mouse, and overlays secure UI on top of the HDMI frames generated by the untrusted host. The guiding design principles of ProtectIOn are that (i) integrity of user input and output cannot be considered separately, (ii) all user input modalities need to be protected simultaneously, and (iii) integrity protection should not rely on error prone user tasks like checking the presence of security indicators. By following these guidelines, ProtectIOn achieves strong protection for IO integrity. We also propose an extension of ProtectIOn for IO confidentiality and implement a plug-and-play prototype and evaluate its performance.},
+  pdf={https://www.ndss-symposium.org/wp-content/uploads/2020/02/24112-paper.pdf},
+  html={https://www.ndss-symposium.org/ndss-paper/protection-root-of-trust-for-io-in-compromised-platforms/},
+  url       = {https://www.ndss-symposium.org/ndss-paper/protection-root-of-trust-for-io-in-compromised-platforms/}
 }
 
-@article{einstein1905movement,
-  abbr={Ann. Phys.},
-  title={Un the movement of small particles suspended in statiunary liquids required by the molecular-kinetic theory 0f heat},
-  author={Einstein, A.},
-  journal={Ann. Phys.,},
-  volume={17},
-  pages={549--560},
-  year={1905}
+@inproceedings{DBLP:conf/ndss/MavroudisWDKC20,
+  author    = {Vasilios Mavroudis and
+               Karl W{\"{u}}st and
+               Aritra Dhar and
+               Kari Kostiainen and
+               Srdjan Capkun},
+  title     = {Snappy: Fast On-chain Payments with Practical Collaterals},
+  journal = {27th Annual Network and Distributed System Security Symposium, {NDSS}},
+  publisher = {The Internet Society},
+  year      = {2020},
+ abbr={NDSS 2020},
+  html       = {https://www.ndss-symposium.org/ndss-paper/snappy-fast-on-chain-payments-with-practical-collaterals/},
+pdf={https://www.ndss-symposium.org/wp-content/uploads/2020/02/24049-paper.pdf},
+abstract={Permissionless blockchains offer many advantages but also have significant limitations including high latency. This prevents their use in important scenarios such as retail payments, where merchants should approve payments fast. Prior works have attempted to mitigate this problem by moving transactions off the chain. However, such Layer-2 solutions have their own problems: payment channels require a separate deposit towards each merchant and thus significant locked-in funds from customers; payment hubs require very large operator deposits that depend on the number of customers; and side-chains require trusted validators.
+<p></p>
+In this paper, we propose Snappy, a novel solution that enables recipients, like merchants, to safely accept fast payments. In Snappy, all payments are on the chain, while small customer collaterals and moderate merchant collaterals act as payment guarantees. Besides receiving payments, merchants also act as statekeepers who collectively track and approve incoming payments using majority voting. In case of a double-spending attack, the victim merchant can recover lost funds either from the collateral of the malicious customer or a colluding statekeeper (merchant). Snappy overcomes the main problems of previous solutions: a single customer collateral can be used to shop with many merchants; merchant collaterals are independent of the number of customers; and validators do not have to be trusted. Our Ethereum prototype shows that safe, fast (<2 seconds) and cheap payments are possible on existing blockchains.},
+  timestamp = {Mon, 01 Feb 2021 08:42:27 +0100},
+  biburl    = {https://dblp.org/rec/conf/ndss/MavroudisWDKC20.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
 }
 
-@article{einstein1905electrodynamics,
-  title={On the electrodynamics of moving bodies},
-  author={Einstein, A.},
-  year={1905}
+
+@article{DBLP:journals/corr/abs-2011-13979,
+  author    = {Ivo Sluganovic and
+               Enis Ulqinaku and
+               Aritra Dhar and
+               Daniele Lain and
+               Srdjan Capkun and
+               Ivan Martinovic},
+  title     = {IntegriScreen: Visually Supervising Remote User Interactions on Compromised
+               Clients},
+  journal   = {CoRR},
+  volume    = {abs/2011.13979},
+  year      = {2020},
+  url       = {https://arxiv.org/abs/2011.13979},
+  eprinttype = {arXiv},
+  eprint    = {2011.13979},
+  timestamp = {Tue, 01 Dec 2020 14:59:59 +0100},
+  biburl    = {https://dblp.org/rec/journals/corr/abs-2011-13979.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+
+@article{DBLP:conf/nsdi/SommerDMMRC19,
+  author    = {David M. Sommer and
+               Aritra Dhar and
+               Luka Malisa and
+               Esfandiar Mohammadi and
+               Daniel Ronzani and
+               Srdjan Capkun},
+  editor    = {Jay R. Lorch and
+               Minlan Yu},
+  title     = {Deniable Upload and Download via Passive Participation},
+  booktitle = {16th {USENIX} Symposium on Networked Systems Design and Implementation,
+               {NSDI} 2019, Boston, MA, February 26-28, 2019},
+  pages     = {649--666},
+  publisher = {{USENIX} Association},
+  year      = {2019},
+  url       = {https://www.usenix.org/conference/nsdi19/presentation/sommer},
+  timestamp = {Tue, 02 Feb 2021 08:05:48 +0100},
+  biburl    = {https://dblp.org/rec/conf/nsdi/SommerDMMRC19.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@article{DBLP:conf/rv/AllabadiDBP18,
+  author    = {Garvita Allabadi and
+               Aritra Dhar and
+               Ambreen Bashir and
+               Rahul Purandare},
+  editor    = {Christian Colombo and
+               Martin Leucker},
+  title     = {{METIS:} Resource and Context-Aware Monitoring of Finite State Properties},
+  booktitle = {Runtime Verification - 18th International Conference, {RV} 2018, Limassol,
+               Cyprus, November 10-13, 2018, Proceedings},
+  series    = {Lecture Notes in Computer Science},
+  volume    = {11237},
+  pages     = {167--186},
+  publisher = {Springer},
+  year      = {2018},
+  url       = {https://doi.org/10.1007/978-3-030-03769-7\_10},
+  doi       = {10.1007/978-3-030-03769-7\_10},
+  timestamp = {Sat, 12 Jun 2021 11:01:04 +0200},
+  biburl    = {https://dblp.org/rec/conf/rv/AllabadiDBP18.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@article{DBLP:journals/corr/abs-1710-03275,
+  author    = {Theja Tulabandhula and
+               Shailesh Vaya and
+               Aritra Dhar},
+  title     = {Privacy-preserving Targeted Advertising},
+  journal   = {CoRR},
+  volume    = {abs/1710.03275},
+  year      = {2017},
+  url       = {http://arxiv.org/abs/1710.03275},
+  eprinttype = {arXiv},
+  eprint    = {1710.03275},
+  timestamp = {Mon, 13 Aug 2018 16:46:44 +0200},
+  biburl    = {https://dblp.org/rec/journals/corr/abs-1710-03275.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@article{DBLP:journals/iacr/DharYKC17,
+  author    = {Aritra Dhar and
+               Der{-}Yeuan Yu and
+               Kari Kostiainen and
+               Srdjan Capkun},
+  title     = {IntegriKey: End-to-End Integrity Protection of User Input},
+  journal   = {{IACR} Cryptol. ePrint Arch.},
+  pages     = {1245},
+  year      = {2017},
+  url       = {http://eprint.iacr.org/2017/1245},
+  timestamp = {Mon, 11 May 2020 15:54:51 +0200},
+  biburl    = {https://dblp.org/rec/journals/iacr/DharYKC17.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+@article{DBLP:journals/iacr/MateticAKDSGJC17,
+  author    = {Sinisa Matetic and
+               Mansoor Ahmed and
+               Kari Kostiainen and
+               Aritra Dhar and
+               David M. Sommer and
+               Arthur Gervais and
+               Ari Juels and
+               Srdjan Capkun},
+  title     = {{ROTE:} Rollback Protection for Trusted Execution},
+  journal   = {{IACR} Cryptol. ePrint Arch.},
+  pages     = {48},
+  year      = {2017},
+  url       = {http://eprint.iacr.org/2017/048},
+  timestamp = {Mon, 11 May 2020 15:57:15 +0200},
+  biburl    = {https://dblp.org/rec/journals/iacr/MateticAKDSGJC17.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@article{DBLP:conf/w4a/DharNY16,
+  author    = {Aritra Dhar and
+               Aditya Nittala and
+               Kuldeep Yadav},
+  editor    = {Gregory R. Gay and
+               Tiago Jo{\~{a}}o Guerreiro},
+  title     = {TactBack: VibroTactile braille output using smartphone and smartwatch
+               for visually impaired},
+  booktitle = {Proceedings of the 13th Web for All Conference, {W4A} '16, Montreal,
+               Canada, April 11-13, 2016},
+  pages     = {13:1--13:2},
+  publisher = {{ACM}},
+  year      = {2016},
+  url       = {https://doi.org/10.1145/2899475.2899514},
+  doi       = {10.1145/2899475.2899514},
+  timestamp = {Tue, 06 Nov 2018 16:58:20 +0100},
+  biburl    = {https://dblp.org/rec/conf/w4a/DharNY16.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@article{DBLP:conf/sigsoft/DharPDR15,
+  author    = {Aritra Dhar and
+               Rahul Purandare and
+               Mohan Dhawan and
+               Suresh Rangaswamy},
+  editor    = {Elisabetta Di Nitto and
+               Mark Harman and
+               Patrick Heymans},
+  title     = {{CLOTHO:} saving programs from malformed strings and incorrect string-handling},
+  booktitle = {Proceedings of the 2015 10th Joint Meeting on Foundations of Software
+               Engineering, {ESEC/FSE} 2015, Bergamo, Italy, August 30 - September
+               4, 2015},
+  pages     = {555--566},
+  publisher = {{ACM}},
+  year      = {2015},
+  url       = {https://doi.org/10.1145/2786805.2786877},
+  doi       = {10.1145/2786805.2786877},
+  timestamp = {Tue, 06 Nov 2018 16:59:22 +0100},
+  biburl    = {https://dblp.org/rec/conf/sigsoft/DharPDR15.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@article{DBLP:conf/fc/SaxenaMD14,
+  author    = {Amitabh Saxena and
+               Janardan Misra and
+               Aritra Dhar},
+  editor    = {Rainer B{\"{o}}hme and
+               Michael Brenner and
+               Tyler Moore and
+               Matthew Smith},
+  title     = {Increasing Anonymity in Bitcoin},
+  booktitle = {Financial Cryptography and Data Security - {FC} 2014 Workshops, {BITCOIN}
+               and {WAHC} 2014, Christ Church, Barbados, March 7, 2014, Revised Selected
+               Papers},
+  series    = {Lecture Notes in Computer Science},
+  volume    = {8438},
+  pages     = {122--139},
+  publisher = {Springer},
+  year      = {2014},
+  url       = {https://doi.org/10.1007/978-3-662-44774-1\_9},
+  doi       = {10.1007/978-3-662-44774-1\_9},
+  timestamp = {Wed, 12 Aug 2020 17:59:02 +0200},
+  biburl    = {https://dblp.org/rec/conf/fc/SaxenaMD14.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@article{DBLP:conf/ict-eurasia/SarkarD13,
+  author    = {Pinaki Sarkar and
+               Aritra Dhar},
+  editor    = {Khabib Mustofa and
+               Erich J. Neuhold and
+               A Min Tjoa and
+               Edgar R. Weippl and
+               Ilsun You},
+  title     = {Code Based {KPD} Scheme with Full Connectivity: Deterministic Merging},
+  booktitle = {Information and Communicatiaon Technology - International Conference,
+               ICT-EurAsia 2013, Yogyakarta, Indonesia, March 25-29, 2013. Proceedings},
+  series    = {Lecture Notes in Computer Science},
+  volume    = {7804},
+  pages     = {141--151},
+  publisher = {Springer},
+  year      = {2013},
+  url       = {https://doi.org/10.1007/978-3-642-36818-9\_15},
+  doi       = {10.1007/978-3-642-36818-9\_15},
+  timestamp = {Tue, 14 May 2019 10:00:38 +0200},
+  biburl    = {https://dblp.org/rec/conf/ict-eurasia/SarkarD13.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@article{DBLP:conf/mobihoc/SarkarRD13,
+  author    = {Pinaki Sarkar and
+               Brijesh Kumar Rai and
+               Aritra Dhar},
+  editor    = {A. Chockalingam and
+               D. Manjunath and
+               Massimo Franceschetti and
+               Leandros Tassiulas},
+  title     = {Connecting, scaling and securing {RS} code and {TD} based KPDs in
+               WSNs: deterministic merging},
+  booktitle = {The Fourteenth {ACM} International Symposium on Mobile Ad Hoc Networking
+               and Computing, MobiHoc '13, Bangalore, India, July 29 - August 01,
+               2013},
+  pages     = {301--304},
+  publisher = {{ACM}},
+  year      = {2013},
+  url       = {https://doi.org/10.1145/2491288.2491329},
+  doi       = {10.1145/2491288.2491329},
+  timestamp = {Tue, 06 Nov 2018 11:07:07 +0100},
+  biburl    = {https://dblp.org/rec/conf/mobihoc/SarkarRD13.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@article{DBLP:conf/isw/BagDS12,
+  author    = {Samiran Bag and
+               Aritra Dhar and
+               Pinaki Sarkar},
+  editor    = {Dieter Gollmann and
+               Felix C. Freiling},
+  title     = {100{\%} Connectivity for Location Aware Code Based {KPD} in Clustered
+               {WSN:} Merging Blocks},
+  booktitle = {Information Security - 15th International Conference, {ISC} 2012,
+               Passau, Germany, September 19-21, 2012. Proceedings},
+  series    = {Lecture Notes in Computer Science},
+  volume    = {7483},
+  pages     = {136--150},
+  publisher = {Springer},
+  year      = {2012},
+  url       = {https://doi.org/10.1007/978-3-642-33383-5\_9},
+  doi       = {10.1007/978-3-642-33383-5\_9},
+  timestamp = {Tue, 14 May 2019 10:00:53 +0200},
+  biburl    = {https://dblp.org/rec/conf/isw/BagDS12.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
 }

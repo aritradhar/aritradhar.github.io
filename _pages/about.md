@@ -9,6 +9,7 @@ profile:
   image: prof_pic.jpg
   address: >
     <p>Von Neuman Lab</p>
+    <p>abHuawei Zurich Research Center</p>
     <p>Thurgauerstrasse 40, 8050 Zürich</p>
     <p></p>
 

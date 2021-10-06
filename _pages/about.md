@@ -36,7 +36,7 @@ I received my Ph.D. degree in Computer Science in the [System Security research 
   
 
 # Work experience
-* **[Dec 2014 - Apr 2016]** (Senior) Researcher - Von Neuman Lab, Huawei Zurich research center, Zurich, Switzerland
+* **[Augusr 2021 - current]** (Senior) Researcher - Von Neuman Lab, Huawei Zurich research center, Zurich, Switzerland
   * Confidential computing
   * Hardware security
 * **[Dec 2014 - Apr 2016]** Research Engineer, Xerox Research Center India, Bangalore, India

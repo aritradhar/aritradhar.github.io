@@ -5,29 +5,31 @@ title: Talks
 description: Some of the talks on my reserch projects over the years.
 nav: true
 ---
-* Building Trust in Modern Computing Platforms
+* Building Trust in Modern Computing Platforms (2021)
   * PhD Defense, ETH Zurich
-*  Building Trust in Modern Computing Platforms
+*  Building Trust in Modern Computing Platforms (2021)
    *  [**Job talk, online**] VMWare Research, Palo Alto, USA
-*  How (not) to Build Trusted Path
+*  How (not) to Build Trusted Path (2021)
    *  [**Job Talk, Online**] HP Labs, Bristol, UK
-*  Building Trust in Modern Computing Platforms
+*  Building Trust in Modern Computing Platforms (2021)
    * [**Job Talk, Online**] Microsoft Research, Seattle
- * Building Trust in Modern Computing Platforms
+ * Building Trust in Modern Computing Platforms (2021)
    * [**Job Talk, Online**] Dfinity Foundation, Zurich
- * ProximiTEE: Hardened SGX attestation by proximity verification
+ * ProximiTEE: Hardened SGX attestation by proximity verification (2020)
+   * ACM CODASPY 2020, online
+ * ProtectIOn: Root-of-Trust for IO in Compromised Platforms (2020)
    * NDSS 2020, San Diego, USA
- * How (not) to Build Trusted Path
+ * How (not) to Build Trusted Path (2020)
    * Winter Outing, ETH Zurich
- * Deniable Upload and Download via Passive Participation
+ * Deniable Upload and Download via Passive Participation (2019)
    * NSDI 2019, Boston, USA
- * METIS: Resource and Context-Aware Monitoring of Finite State Properties
+ * METIS: Resource and Context-Aware Monitoring of Finite State Properties (2018)
    * RV 2018, Limassol, Cyprus
- * Clotho: Saving Programs from Malformed Strings and Incorrect String-Handling
+ * Clotho: Saving Programs from Malformed Strings and Incorrect String-Handling (2016)
    * [**PhD talk**] ETH Zurich
-* Clotho: Saving Programs from Malformed Strings and Incorrect String-Handling
+* Clotho: Saving Programs from Malformed Strings and Incorrect String-Handling (2016)
    * [**PhD talk**] MPI-SWS, Saarbruken, Germany
- * Clotho: Saving Programs from Malformed Strings and Incorrect String-Handling
+ * Clotho: Saving Programs from Malformed Strings and Incorrect String-Handling (2015)
    * FSE 2015, Bergamo, Italy
- * How to patch bugs in Large Software
+ * How to patch bugs in Large Software (2014)
    * Accenture technology Labs, India

@@ -1,11 +1,14 @@
 ---
 layout: page
 permalink: /teaching/
-title: teaching
-description: Materials for courses you taught. Replace this text with your description.
+title: Teaching
+description: Over the years, I was also working as a teaching assistants for different courses in ETH Zurich and IIIT-Delhi
 nav: true
 ---
-
-For now, this page is assumed to be a static description of your courses. You can convert it to a collection similar to `_projects/` so that you can have a dedicated page for each course.
-
-Organize your courses by years, topics, or universities, however you like!
+* System Security (ETH Zurich)
+* Data structure and Algorithm (ETH Zurich)
+* Digital Design (ETH Zurich)
+* Algorithms (ETH Zurich)
+* Program Analysis (IIIT-Delhi)
+* Applied Cryptography (IIIT-Delhi)
+* Linear algebra (IIIT-Delhi)

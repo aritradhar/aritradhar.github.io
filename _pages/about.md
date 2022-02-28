@@ -39,9 +39,10 @@ You can download my recent CV [here](assets/img/CV_long.pdf).
   
 
 # Work experience
-* **[Augusr 2021 - current]** (Senior) Researcher - Von Neuman Lab, Huawei Zurich research center, Zurich, Switzerland
+* **[Augusr 2021 - current]** (Senior) Researcher - Hardware Security, Von Neuman Lab, Huawei Zurich research center, Zurich, Switzerland
   * Confidential computing
   * Hardware security
+* **[May 2016 - June 2021]** PhD Student, System Security Group, Institute of Information Security, ETH Zurich, Zurich, Switzerland
 * **[Dec 2014 - Apr 2016]** Research Engineer, Xerox Research Center India, Bangalore, India
   * Privacy preserving targeted advertisement and recommendation systems.
   * Using smartphone and smartwatches to assist and navigate the visually impaired.

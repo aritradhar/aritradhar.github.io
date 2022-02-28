@@ -39,7 +39,7 @@ You can download my recent CV [here](assets/img/CV_long.pdf).
   
 
 # Work experience
-* **[Augusr 2021 - current]** (Senior) Researcher - Hardware Security, Von Neuman Lab, Huawei Zurich research center, Zurich, Switzerland
+* **[August 2021 - current]** (Senior) Researcher - Hardware Security, Von Neuman Lab, Huawei Zurich research center, Zurich, Switzerland
   * Confidential computing
   * Hardware security
 * **[May 2016 - June 2021]** PhD Student, System Security Group, Institute of Information Security, ETH Zurich, Zurich, Switzerland

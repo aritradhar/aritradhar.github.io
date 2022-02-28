@@ -5,6 +5,8 @@ title: Talks
 description: Some of the talks on my reserch projects over the years.
 nav: true
 ---
+* Confidential Computing in the Age of Disaggregation: Access Control, Attestation and Isolation of Secure Distributed Applications in the Cloud (2021)
+  * Von Neumann Laboratory (VNL) Workshop, Huawei Reserch Center Zurich, Switzerland
 * Building Trust in Modern Computing Platforms (2021)
   * PhD Defense, ETH Zurich
 *  Building Trust in Modern Computing Platforms (2021)

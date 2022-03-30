@@ -43,6 +43,7 @@ You can download my recent CV [here](assets/img/CV_long.pdf).
   * Confidential computing
   * Hardware security
 * **[May 2016 - June 2021]** PhD Student, System Security Group, Institute of Information Security, ETH Zurich, Zurich, Switzerland
+  * Trusted path, confidential computing, cyber-physial system security, anonymity
 * **[Dec 2014 - Apr 2016]** Research Engineer, Xerox Research Center India, Bangalore, India
   * Privacy preserving targeted advertisement and recommendation systems.
   * Using smartphone and smartwatches to assist and navigate the visually impaired.

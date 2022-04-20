@@ -27,7 +27,7 @@ I received my Ph.D. degree in Computer Science in the [System Security research 
 You can download my recent CV [here](assets/img/CV_long.pdf).
 
 # Education
-* **[2016-2021]** Ph.D., [System Securiy](https://syssec.ethz.ch/), [Computer Science] (https://inf.ethz.ch/), [ETH Zurich](https://ethz.ch/en.html), Switzerland
+* **[2016-2021]** Ph.D., [System Securiy](https://syssec.ethz.ch/), [Computer Science](https://inf.ethz.ch/), [ETH Zurich](https://ethz.ch/en.html), Switzerland
   * Supervisor: [Prof. Dr. Srdjan Capkun](https://syssec.ethz.ch/people/capkun.html)
   * Thesis title: [Building Trust in Modern Computing Platforms](https://www.research-collection.ethz.ch/handle/20.500.11850/487786)
 * **[2012-2014]** M.Tech.Computer Science (Information Security), [IIIT Delhi](https://www.iiitd.ac.in/), India

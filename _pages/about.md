@@ -27,10 +27,10 @@ I received my Ph.D. degree in Computer Science in the [System Security research 
 You can download my recent CV [here](assets/img/CV_long.pdf).
 
 # Education
-* **[2016-2021]** Ph.D., Computer Science, ETH Zurich, Switzerland
+* **[2016-2021]** Ph.D., [System Securiy](https://syssec.ethz.ch/), [Computer Science] (https://inf.ethz.ch/), [ETH Zurich](https://ethz.ch/en.html), Switzerland
   * Supervisor: [Prof. Dr. Srdjan Capkun](https://syssec.ethz.ch/people/capkun.html)
   * Thesis title: [Building Trust in Modern Computing Platforms](https://www.research-collection.ethz.ch/handle/20.500.11850/487786)
-* **[2012-2014]** M.Tech.Computer Science (Information Security), IIIT Delhi, India
+* **[2012-2014]** M.Tech.Computer Science (Information Security), [IIIT Delhi](https://www.iiitd.ac.in/), India
   * Thesis supervisor: [Dr. Rahul Purandare](https://www.iiitd.edu.in/~purandare/) 
   * Thesis title: [Clotho : Saving Programs from Malformed Strings and Incorrect String-handling](https://repository.iiitd.edu.in/jspui/handle/123456789/203)
 * **[2008-2012]** B.Tech. Computer Science, West BVengal University of Technology, India
@@ -44,7 +44,7 @@ You can download my recent CV [here](assets/img/CV_long.pdf).
   * Hardware security
 * **[May 2016 - June 2021]** PhD Student, System Security Group, Institute of Information Security, ETH Zurich, Zurich, Switzerland
   * Trusted path, confidential computing, cyber-physial system security, anonymity
-* **[Dec 2014 - Apr 2016]** Research Engineer, Xerox Research Center India, Bangalore, India
+* **[Dec 2014 - Apr 2016]** Research Engineer, Xerox Research Center India (now Conduent Reserch), Bangalore, India
   * Privacy preserving targeted advertisement and recommendation systems.
   * Using smartphone and smartwatches to assist and navigate the visually impaired.
 * **[Jan 2013 - July 2013]** Research Intern.} Accenture Technology Labs, Bangalore, India

@@ -33,7 +33,7 @@ You can download my recent CV [here](assets/img/CV_long.pdf).
 * **[2012-2014]** M.Tech.Computer Science (Information Security), [IIIT Delhi](https://www.iiitd.ac.in/), India
   * Thesis supervisor: [Dr. Rahul Purandare](https://www.iiitd.edu.in/~purandare/) 
   * Thesis title: [Clotho : Saving Programs from Malformed Strings and Incorrect String-handling](https://repository.iiitd.edu.in/jspui/handle/123456789/203)
-* **[2008-2012]** B.Tech. Computer Science, West BVengal University of Technology, India
+* **[2008-2012]** B.Tech. Computer Science, West Bengal University of Technology, India
   * Thesis supervisor: Dr. Pinaki Sarkar
   * Thesis title: Security of Key Pre-distribution Schemes in Wireless Sensor Networks
   

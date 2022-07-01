@@ -5,6 +5,8 @@ title: Talks
 description: Some of the talks on my reserch projects over the years.
 nav: true
 ---
+* Multi-tenancy: Its Complexity and Security Implications (2022)
+  * Zühlke Technology Group
 * Multi-tenancy: Its Complexity and Security Implications (2022) 
   * Huawei Reserch
 * Confidential Computing in the Age of Disaggregation: Access Control, Attestation and Isolation of Secure Distributed Applications in the Cloud (2021)

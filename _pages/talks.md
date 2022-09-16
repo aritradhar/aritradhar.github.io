@@ -8,9 +8,9 @@ nav: true
 * Multi-tenancy: Its Complexity and Security Implications (2022)
   * Zühlke Technology Group
 * Multi-tenancy: Its Complexity and Security Implications (2022) 
-  * Huawei Reserch
+  * Huawei Research
 * Confidential Computing in the Age of Disaggregation: Access Control, Attestation and Isolation of Secure Distributed Applications in the Cloud (2021)
-  * Von Neumann Laboratory (VNL) Workshop, Huawei Reserch Center Zurich, Switzerland
+  * Computing Systems Labs  Workshop, Huawei Reserch Center Zurich, Switzerland
 * ProximiTEE: Hardened SGX Attestation using Auxiliary Device and Proximity Verification (2021)
   * Huawei Research
 * Building Trust in Modern Computing Platforms (2021)

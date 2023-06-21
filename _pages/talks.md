@@ -5,6 +5,8 @@ title: Talks
 description: Some of the talks on my reserch projects over the years.
 nav: true
 ---
+* Empowering Data Centers for Next Generation Trusted Computing (2023)
+  * ZISC lunch seminer, Institute of Information Security, ETH Zurich
 * Multi-tenancy: Its Complexity and Security Implications (2022)
   * Zühlke Technology Group
 * Multi-tenancy: Its Complexity and Security Implications (2022) 

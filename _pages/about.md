@@ -10,7 +10,7 @@ profile:
   address: >
     <p>Computing Systems Lab</p>
     <p>Huawei Zurich Research Center</p>
-    <p>Thurgauerstrasse 40, 8050 Zürich</p>
+    <p>Thurgauerstrasse 80, 8050 Zürich</p>
     <p></p>
 
 news: true  # includes a list of news items
@@ -40,6 +40,7 @@ You can download my recent CV [here](assets/img/CV_long.pdf).
 
 # Work experience
 * **[August 2021 - current]** (Senior) Researcher - Hardware Security, Von Neuman Lab, Huawei Zurich research center, Zurich, Switzerland
+  * AI model security
   * Confidential computing for large-scale distributed system
   * Hardware design for secure AI Accelerator and storage devices
 * **[May 2016 - June 2021]** PhD Student, System Security Group, Institute of Information Security, ETH Zurich, Zurich, Switzerland

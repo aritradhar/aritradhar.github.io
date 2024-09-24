@@ -4,16 +4,16 @@
       author={Dhar, Aritra and Sridhara, Supraja and Shinde, Shweta and Capkun, Srdjan and Andri, Renzo},
       year={2024},
       abstract = {Cloud-centric workloads increasingly leverage domain-specific accelerators (DSAs) such as GPU, NPU, FPGA, etc., to achieve massive speedup over general-purpose CPUs. These workloads compute sensitive data; furthermore, the programs can be proprietary business secrets such as high-performance AI models. Therefore, several confidential cloud solutions have recently emerged to protect against the attacker-controlled software stack (OS/VMM) and the cloud service providers or CSPs themselves. CPU-centric trusted execution environments, or TEEs, have been around for decades and are deployed commercially. However, despite some recent proposals, most nodes lack TEE capability and, therefore, are unprotected against malicious CSP and software stack.
-
+<p></p>
 We address this gap by proposing a new dedicated hardware module, the security controller (SC), that acts as the TEE proxy for the legacy non-TEE DSA nodes in a data center across racks. SC enforces access control and attestation mechanisms and protects the non-TEE nodes even from a physical attacker. 
 This way, SC enables new-generation TEE-enabled nodes and legacy non-TEE nodes to be used in a data center simultaneously while ensuring security.
 We implement and synthesize SC hardware and evaluate it with real-world cloud-centric workloads with heterogeneous DSAs. Our evaluation shows that, on average, SC introduces 1.5-5% overhead while running AI, Redis, and file system workloads and scales well with an increasing number of DSA nodes (up to 2236 concurrent NPUs running CNNs).},
       booktitle={ACSAC 2024 (to appear)},
-        journal={ACSAC 2024},
-        organization={Applied Computer Security Associates (ACSA)},
-        year={2024},
-        abbr={ACSAC 2024},
-        selected={true}
+      journal={ACSAC 2024},
+      organization={Applied Computer Security Associates (ACSA)},
+      year={2024},
+      abbr={ACSAC 2024},
+      selected={true}
 
 }
 
@@ -23,6 +23,7 @@ We implement and synthesize SC hardware and evaluate it with real-world cloud-ce
       author={Dhar, Aritra and Thorens, Clément and Magdalena Lazier, Lara  and Cavigelli, Lukas},
       year={2024},
       abstract = {Cloud workloads have dominated generative AI based on large language models (LLM). Specialized hardware accelerators, such as GPUs, NPUs, and TPUs, play a key role in AI adoption due to their superior performance over general-purpose CPUs. The AI models and the data are often highly sensitive and come from mutually distrusting parties. Existing CPU-based TEEs such as Intel SGX or AMD SEV do not provide sufficient protection. Device-centric TEEs like Nvidia-CC only address tightly coupled CPU-GPU systems with a proprietary solution requiring TEE on the host CPU side. On the other hand, existing academic proposals are tailored toward specific CPU-TEE platforms.
+      <p></p>
 To address this gap, we propose Ascend-CC, a confidential computing architecture based on discrete NPU devices that requires no trust in the host system. Ascend-CC provides strong security by ensuring data and model encryption that protects not only the data but also the model parameters and operator binaries. Ascend-CC uses delegation-based memory semantics to ensure isolation from the host software stack, and task attestation provides strong model integrity guarantees. Our Ascend-CC implementation and evaluation with state-of-the-art LLMs such as Llama2 and Llama3 shows that Ascend-CC introduces minimal overhead with no changes in the AI software stack.},
       eprint={2407.11888},
       archivePrefix={arXiv},
@@ -40,7 +41,7 @@ To address this gap, we propose Ascend-CC, a confidential computing architecture
       author={Dhar, Aritra and Sridhara, Supraja and Shinde, Shweta and Capkun, Srdjan and Andri, Renzo},
       year={2024},
       abstract = {Cloud-centric workloads are increasingly moving towards leveraging domain-specific accelerators (DSAs) such as GPU, NPU, FPGA, etc. to achieve massive speedup over general-purpose CPUs. These workloads compute sensitive data; furthermore, the programs themselves can be proprietary business secrets such as high-performance AI models. Therefore, several confidential cloud solutions have recently emerged to protect not only the attacker-controlled software stack (OS/VMM) but also the cloud service providers or CSPs themselves. CPU-centric trusted execution environments or TEEs have been around for some time and are deployed commercially. However, despite some recent proposals, most nodes do not have any TEE capability and, therefore, are unprotected against malicious CSP and software stack.
-
+<p></p>
 In this paper, we address this gap by proposing a new dedicated hardware module, which we call the security controller (SC) that acts as the TEE proxy for the legacy non-TEE DSA nodes in a data center rack. SC enforces access control and attestation mechanisms and protects the non-TEE nodes even from a physical attacker. We implement and synthesize SC hardware and evaluate it with real-world cloud-centric workloads with heterogeneous DSAs. Our evaluation shows that on average, SC introduces 1.5-4.5% overhead while running AI, Redis, and file system workloads and scales well with an increasing number of DSA nodes (up to 2236 concurrent NPUs running CNNs).
 We implement and synthesize SC hardware and evaluate it with real-world cloud-centric workloads with heterogeneous DSAs. Our evaluation shows that, on average, SC introduces 1.5-5% overhead while running AI, Redis, and file system workloads and scales well with an increasing number of DSA nodes (up to 2236 concurrent NPUs running CNNs).},
       booktitle={DAC 2024 Work-in-Progress Poster},
@@ -57,7 +58,7 @@ We implement and synthesize SC hardware and evaluate it with real-world cloud-ce
       author={Dhar, Aritra and Sridhara, Supraja and Shinde, Shweta and Capkun, Srdjan and Andri, Renzo},
       year={2024},
       abstract = {Modern disaggregated data centers have grown beyond CPU nodes to provide their customers with domain-specific accelerators (DSAs) such as GPUs, NPUs, and FPGAs. Existing CPU-based TEEs such as Intel SGX or AMD SEV does not provide sufficient protection. DSA-TEE such as Nvidia CC only addresses tightly coupled CPU-DSA systems with a propriety solution. On the other hand, existing academic proposals are tailored toward specific CPU-TEE platforms.
-      
+      <p></p>
       To bridge this lack of generality, in this paper, we investigate the feasibility of \textit{enclaved} execution across multi-tenant heterogeneous nodes, extending beyond TEE-enabled CPUs. Wide-scale TEE support for accelerators seems a straightforward solution but is far from being a reality.
 In this paper, we investigate the fundamental design principles for enabling hardware-backed isolated and attestable instances, a.k.a., enclaves that provide isolation of code and data from attacker-controlled host software stack (OS/VMM). We prototype custom TEE hardware support for two kinds of accelerators: NPU and SSD with low overhead, that show the feasibility of adding TEE support to existing accelerators. Moreover, we evaluated our prototype with real-world AI and storage workload and observed 1-16% overhead.},
     booktitle={DAC 2024 Work-in-Progress Poster},

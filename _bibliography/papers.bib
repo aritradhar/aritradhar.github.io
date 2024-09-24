@@ -1,5 +1,26 @@
+
+@article{dhar2024acsac,
+      title={Confidential Computing with Heterogeneous Devices at Cloud-Scale},
+      author={Dhar, Aritra and Sridhara, Supraja and Shinde, Shweta and Capkun, Srdjan and Andri, Renzo},
+      year={2024},
+      abstract = {Cloud-centric workloads increasingly leverage domain-specific accelerators (DSAs) such as GPU, NPU, FPGA, etc., to achieve massive speedup over general-purpose CPUs. These workloads compute sensitive data; furthermore, the programs can be proprietary business secrets such as high-performance AI models. Therefore, several confidential cloud solutions have recently emerged to protect against the attacker-controlled software stack (OS/VMM) and the cloud service providers or CSPs themselves. CPU-centric trusted execution environments, or TEEs, have been around for decades and are deployed commercially. However, despite some recent proposals, most nodes lack TEE capability and, therefore, are unprotected against malicious CSP and software stack.
+
+We address this gap by proposing a new dedicated hardware module, the security controller (SC), that acts as the TEE proxy for the legacy non-TEE DSA nodes in a data center across racks. SC enforces access control and attestation mechanisms and protects the non-TEE nodes even from a physical attacker. 
+This way, SC enables new-generation TEE-enabled nodes and legacy non-TEE nodes to be used in a data center simultaneously while ensuring security.
+We implement and synthesize SC hardware and evaluate it with real-world cloud-centric workloads with heterogeneous DSAs. Our evaluation shows that, on average, SC introduces 1.5-5% overhead while running AI, Redis, and file system workloads and scales well with an increasing number of DSA nodes (up to 2236 concurrent NPUs running CNNs).},
+      booktitle={ACSAC 2024 (to appear)},
+        journal={ACSAC 2024},
+        organization={Applied Computer Security Associates (ACSA)},
+        year={2024},
+        abbr={ACSAC 2024},
+        selected={true}
+
+}
+
+
+
 @article{dhar2024ascendccconfidentialcomputingheterogeneous,
-      title={Ascend-CC: Confidential Computing on Heterogeneous NPU for Emerging Generative AI Workloads}, 
+ title={Ascend-CC: Confidential Computing on Heterogeneous NPU for Emerging Generative AI Workloads}, 
       author={Dhar, Aritra and Thorens, Clément and Magdalena Lazier, Lara  and Cavigelli, Lukas},
       year={2024},
       abstract = {Cloud workloads have dominated generative AI based on large language models (LLM). Specialized hardware accelerators, such as GPUs, NPUs, and TPUs, play a key role in AI adoption due to their superior performance over general-purpose CPUs. The AI models and the data are often highly sensitive and come from mutually distrusting parties. Existing CPU-based TEEs such as Intel SGX or AMD SEV do not provide sufficient protection. Device-centric TEEs like Nvidia-CC only address tightly coupled CPU-GPU systems with a proprietary solution requiring TEE on the host CPU side. On the other hand, existing academic proposals are tailored toward specific CPU-TEE platforms.

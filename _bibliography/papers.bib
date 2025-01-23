@@ -1,115 +1,488 @@
----
----
 
-@string{aps = {American Physical Society,}}
+@article{dhar2024acsac,
+      title={Confidential Computing with Heterogeneous Devices at Cloud-Scale},
+      author={Dhar, Aritra and Sridhara, Supraja and Shinde, Shweta and Capkun, Srdjan and Andri, Renzo},
+      year={2024},
+      abstract = {Cloud-centric workloads increasingly leverage domain-specific accelerators (DSAs) such as GPU, NPU, FPGA, etc., to achieve massive speedup over general-purpose CPUs. These workloads compute sensitive data; furthermore, the programs can be proprietary business secrets such as high-performance AI models. Therefore, several confidential cloud solutions have recently emerged to protect against the attacker-controlled software stack (OS/VMM) and the cloud service providers or CSPs themselves. CPU-centric trusted execution environments, or TEEs, have been around for decades and are deployed commercially. However, despite some recent proposals, most nodes lack TEE capability and, therefore, are unprotected against malicious CSP and software stack.
+<p></p>
+We address this gap by proposing a new dedicated hardware module, the security controller (SC), that acts as the TEE proxy for the legacy non-TEE DSA nodes in a data center across racks. SC enforces access control and attestation mechanisms and protects the non-TEE nodes even from a physical attacker. 
+This way, SC enables new-generation TEE-enabled nodes and legacy non-TEE nodes to be used in a data center simultaneously while ensuring security.
+We implement and synthesize SC hardware and evaluate it with real-world cloud-centric workloads with heterogeneous DSAs. Our evaluation shows that, on average, SC introduces 1.5-5% overhead while running AI, Redis, and file system workloads and scales well with an increasing number of DSA nodes (up to 2236 concurrent NPUs running CNNs).},
+      booktitle={ACSAC 2024 (to appear)},
+      journal={ACSAC 2024},
+      organization={Applied Computer Security Associates (ACSA)},
+      year={2024},
+      abbr={ACSAC 2024},
+      html={https://www.openconf.org/acsac2024/modules/request.php?module=oc_program&action=summary.php&id=297},
+      url={https://www.openconf.org/acsac2024/modules/request.php?module=oc_program&action=summary.php&id=297},
+      selected={true}
 
-@book{einstein1920relativity,
-  title={Relativity: the Special and General Theory},
-  author={Einstein, Albert},
-  year={1920},
-  publisher={Methuen & Co Ltd},
-  html={relativity.html}
 }
 
-@book{einstein1956investigations,
-  bibtex_show={true},
-  title={Investigations on the Theory of the Brownian Movement},
-  author={Einstein, Albert},
-  year={1956},
-  publisher={Courier Corporation},
-  preview={brownian-motion.gif}
+
+@article{dhar2024ascendccconfidentialcomputingheterogeneous,
+ title={Ascend-CC: Confidential Computing on Heterogeneous NPU for Emerging Generative AI Workloads}, 
+      author={Dhar, Aritra and Thorens, Clément and Magdalena Lazier, Lara  and Cavigelli, Lukas},
+      year={2024},
+      abstract = {Cloud workloads have dominated generative AI based on large language models (LLM). Specialized hardware accelerators, such as GPUs, NPUs, and TPUs, play a key role in AI adoption due to their superior performance over general-purpose CPUs. The AI models and the data are often highly sensitive and come from mutually distrusting parties. Existing CPU-based TEEs such as Intel SGX or AMD SEV do not provide sufficient protection. Device-centric TEEs like Nvidia-CC only address tightly coupled CPU-GPU systems with a proprietary solution requiring TEE on the host CPU side. On the other hand, existing academic proposals are tailored toward specific CPU-TEE platforms.
+      <p></p>
+To address this gap, we propose Ascend-CC, a confidential computing architecture based on discrete NPU devices that requires no trust in the host system. Ascend-CC provides strong security by ensuring data and model encryption that protects not only the data but also the model parameters and operator binaries. Ascend-CC uses delegation-based memory semantics to ensure isolation from the host software stack, and task attestation provides strong model integrity guarantees. Our Ascend-CC implementation and evaluation with state-of-the-art LLMs such as Llama2 and Llama3 shows that Ascend-CC introduces minimal overhead with no changes in the AI software stack.},
+      eprint={2407.11888},
+      archivePrefix={arXiv},
+      primaryClass={cs.CR},
+      abbr={arXiv 2024},
+      html = {https://arxiv.org/abs/2407.11888},
+      pdf = {https://arxiv.org/abs/2407.11888.pdf},
+      url={https://arxiv.org/abs/2407.11888}, 
+      selected = {true}
 }
 
-@article{einstein1950meaning,
-  abbr={AJP},
-  bibtex_show={true},
-  title={The meaning of relativity},
-  author={Einstein, Albert and Taub, AH},
-  journal={American Journal of Physics},
-  volume={18},
-  number={6},
-  pages={403--404},
-  year={1950},
-  publisher={American Association of Physics Teachers}
+
+@article{dhar2024dac1,
+      title={Confidential Computing with Heterogeneous Devices at Cloud-Scale},
+      author={Dhar, Aritra and Sridhara, Supraja and Shinde, Shweta and Capkun, Srdjan and Andri, Renzo},
+      year={2024},
+      abstract = {Cloud-centric workloads are increasingly moving towards leveraging domain-specific accelerators (DSAs) such as GPU, NPU, FPGA, etc. to achieve massive speedup over general-purpose CPUs. These workloads compute sensitive data; furthermore, the programs themselves can be proprietary business secrets such as high-performance AI models. Therefore, several confidential cloud solutions have recently emerged to protect not only the attacker-controlled software stack (OS/VMM) but also the cloud service providers or CSPs themselves. CPU-centric trusted execution environments or TEEs have been around for some time and are deployed commercially. However, despite some recent proposals, most nodes do not have any TEE capability and, therefore, are unprotected against malicious CSP and software stack.
+<p></p>
+In this paper, we address this gap by proposing a new dedicated hardware module, which we call the security controller (SC) that acts as the TEE proxy for the legacy non-TEE DSA nodes in a data center rack. SC enforces access control and attestation mechanisms and protects the non-TEE nodes even from a physical attacker. We implement and synthesize SC hardware and evaluate it with real-world cloud-centric workloads with heterogeneous DSAs. Our evaluation shows that on average, SC introduces 1.5-4.5% overhead while running AI, Redis, and file system workloads and scales well with an increasing number of DSA nodes (up to 2236 concurrent NPUs running CNNs).
+We implement and synthesize SC hardware and evaluate it with real-world cloud-centric workloads with heterogeneous DSAs. Our evaluation shows that, on average, SC introduces 1.5-5% overhead while running AI, Redis, and file system workloads and scales well with an increasing number of DSA nodes (up to 2236 concurrent NPUs running CNNs).},
+      booktitle={DAC 2024 Work-in-Progress Poster},
+        journal={DAC 2024 (Work-in-Progress Poster)},
+        html={https://61dac.conference-program.com/presentation/?id=RESEARCH461&sess=sess237}, 
+        abbr={DAC 2024 WIP},
+        selected={true}
+
 }
 
-@article{PhysRev.47.777,
-  abbr={PhysRev},
-  title={Can Quantum-Mechanical Description of Physical Reality Be Considered Complete?},
-  author={Einstein*†, A. and Podolsky*, B. and Rosen*, N.},
-  abstract={In a complete theory there is an element corresponding to each element of reality. A sufficient condition for the reality of a physical quantity is the possibility of predicting it with certainty, without disturbing the system. In quantum mechanics in the case of two physical quantities described by non-commuting operators, the knowledge of one precludes the knowledge of the other. Then either (1) the description of reality given by the wave function in quantum mechanics is not complete or (2) these two quantities cannot have simultaneous reality. Consideration of the problem of making predictions concerning a system on the basis of measurements made on another system that had previously interacted with it leads to the result that if (1) is false then (2) is also false. One is thus led to conclude that the description of reality as given by a wave function is not complete.},
-  journal={Phys. Rev.},
-  location={New Jersey},
-  volume={47},
-  issue={10},
-  pages={777--780},
-  numpages={0},
-  year={1935},
-  month={May},
-  publisher=aps,
-  doi={10.1103/PhysRev.47.777},
-  url={http://link.aps.org/doi/10.1103/PhysRev.47.777},
-  html={https://journals.aps.org/pr/abstract/10.1103/PhysRev.47.777},
-  pdf={example_pdf.pdf},
-  altmetric={248277},
-  dimensions={true},
-  google_scholar_id={qyhmnyLat1gC},
-  video={https://www.youtube-nocookie.com/embed/aqz-KE-bpKQ},
-  additional_info={. *More Information* can be [found here](https://github.com/alshedivat/al-folio/)},
-  annotation={* Example use of superscripts<br>† Albert Einstein},
+@article{dhar2024dac2,
+      title={Principles for Enabling TEEs on Domain-Specific Accelerators},
+      author={Dhar, Aritra and Sridhara, Supraja and Shinde, Shweta and Capkun, Srdjan and Andri, Renzo},
+      year={2024},
+      abstract = {Modern disaggregated data centers have grown beyond CPU nodes to provide their customers with domain-specific accelerators (DSAs) such as GPUs, NPUs, and FPGAs. Existing CPU-based TEEs such as Intel SGX or AMD SEV does not provide sufficient protection. DSA-TEE such as Nvidia CC only addresses tightly coupled CPU-DSA systems with a propriety solution. On the other hand, existing academic proposals are tailored toward specific CPU-TEE platforms.
+      <p></p>
+      To bridge this lack of generality, in this paper, we investigate the feasibility of \textit{enclaved} execution across multi-tenant heterogeneous nodes, extending beyond TEE-enabled CPUs. Wide-scale TEE support for accelerators seems a straightforward solution but is far from being a reality.
+In this paper, we investigate the fundamental design principles for enabling hardware-backed isolated and attestable instances, a.k.a., enclaves that provide isolation of code and data from attacker-controlled host software stack (OS/VMM). We prototype custom TEE hardware support for two kinds of accelerators: NPU and SSD with low overhead, that show the feasibility of adding TEE support to existing accelerators. Moreover, we evaluated our prototype with real-world AI and storage workload and observed 1-16% overhead.},
+    booktitle={DAC 2024 Work-in-Progress Poster},
+    journal={DAC 2024 (Work-in-Progress Poster)},
+    html={https://61dac.conference-program.com/presentation/?id=RESEARCH460&sess=sess236}, 
+    abbr={DAC 2024 WIP},
+    selected={true}
+
+}
+
+@article{aritra2022empower,
+	title = {Empowering Data Centers for Next Generation Trusted Computing},
+	author = {Dhar, Aritra and Sridhara, Supraja and Shinde, Shweta and Capkun, Srdjan and Andri, Renzo},
+	abstract={Modern data centers have grown beyond CPU nodes to provide domain-specific accelerators such as GPUs and FPGAs to their customers. From a security standpoint, cloud customers want to protect their data.
+They are willing to pay additional costs for trusted execution environments such as enclaves provided by Intel SGX and AMD SEV. Unfortunately, the customers have to make a critical choice---either use domain-specific accelerators for speed or use CPU-based confidential computing solutions.
+
+To bridge this gap, we aim to enable data-center scale confidential computing that expands across CPUs and accelerators. We argue that having wide-scale TEE support for accelerators presents a technically easier solution, but is far away from being a reality. Instead, our hybrid design provides enclaved execution guarantees for computation distributed over multiple CPU nodes and devices with/without TEE support. Our solution scales gracefully in two dimensions---it can handle a large number of heterogeneous nodes and it can accommodate  TEE-enabled devices as and when they are available in the future. We observe marginal overheads of 0.42% - 8% on real-world AI data center workloads that are independent of the number of nodes in the data center. We add custom TEE support to two accelerators (AI and storage) and integrate it into our solution, thus demonstrating that it can cater to future TEE devices.},
+	year = {2022},
+	abbr={arXiv 2022},
+	html = {https://arxiv.org/abs/2211.00306},
+	pdf = {https://arxiv.org/pdf/2211.00306.pdf},
+	publisher = {arXiv},
+    selected = {true}
+}
+
+
+
+
+@article{schneider2021pie,
+      title={Composite Enclaves: Towards Disaggregated Trusted Execution}, 
+      author={Moritz Schneider and Aritra Dhar and Ivan Puddu and Kari Kostiainen and Srdjan Capkun},
+      abstract={The ever-rising computation demand is forcing the move from the CPU to heterogeneous specialized hardware, which is readily available across modern datacenters through disaggregated infrastructure. On the other hand, trusted execution environments (TEEs), one of the most promising recent developments in hardware security, can only protect code confined in the CPU, limiting TEEs’ potential and applicability to a handful of applications. We observe that the TEEs’ hardware trusted computing base (TCB) is fixed at design time, which in practice leads to using untrusted software to employ peripherals in TEEs. Based on this observation, we propose composite enclaves with a configurable hardware and software TCB, allowing enclaves access to multiple computing and IO resources. Finally, we present two case studies of composite enclaves: i) an FPGA platform based on RISC-V Keystone connected to emulated peripherals and sensors, and ii) a large-scale accelerator. These case studies showcase a flexible but small TCB (2.5 KLoC for IO peripherals and drivers), with a low-performance overhead (only around 220 additional cycles for a context switch), thus demonstrating the feasibility of our approach and showing that it can work with a wide range of specialized hardware.},
+      booktitle={CHES 2022},
+      journal={CHES 2022},
+      organization={IACR},
+      year={2022},
+      abbr={CHES 2022},
+      html={https://tches.iacr.org/index.php/TCHES/article/view/9309},
+      pdf={https://tches.iacr.org/index.php/TCHES/article/view/9309/8875},
+      selected={true}
+      }
+
+
+@phdthesis{dhar2021building,
+ abbr={Thesis 2021},
+  title={Building Trust in Modern Computing Platforms},
+  author={Dhar, Aritra},
+ journal={PhD Thesis, ETH Zurich},
+abstract={User interfaces (UI) are essential parts of modern complex computing platforms as it dictates how humans provide inputs to these systems and interpret output from them. Many remote safety and security-critical cyber-physical systems such as industrial PLCs (in manufacturing, power plants, etc.), medical implants are accessible through rich UIs over browsers or dedicated applications that are running on commodity systems or hosts. Similarly, e-banking, e-voting, social networks, and many other remote applications and services are critically dependent on UIs for user authentication and IO. An attacker-controlled host can not only observe user's IO data but also can modify them undetected. Loss of integrity and confidentiality of user inputs can lead to catastrophic failure of critical infrastructures, loss of human lives, leakage of sensitive data. The problem of secure communication between a user and an end-system is known as trusted path. Such attacks are not far-fetched as modern software and hardware systems are incredibly complex and span over millions of lines of code. Hence the users are bound to trust a massive trusted computing base or TCB. Exploiting software vulnerabilities of the OS, hypervisors, database systems are very prevalent. Recent technologies such as Trusted execution environments (TEEs) address this problem by reducing the TCB by running isolated environments on the CPU cores, known as enclaves, that are isolated from the OS or hypervisor. However, TEEs do not solve the trusted path problem as TEEs depend on the OS to communicate to the external IO devices. Moreover, the remote attestation mechanism by which a verifier can ensure that she is communicating with the proper enclave is vulnerable to relay attack. In the context of disaggregated computing architecture in modern data centers, the security properties of traditional TEE are insufficient as the trusted path application involves sensitive data not only on the CPU cores but also on the specialized external hardware like accelerators.
+<p></p>
+In this thesis, we propose mechanisms to build trust in modern computing platforms by addressing the trusted path problem, and we make the following contributions. First, we analyze existing trusted path systems and found several attacks that compromise user IO data integrity and confidentiality. We are the first to analyze the trusted path problem to find a set of essential security properties and implement them in a system named ProtectIOn using a trusted embedded device as an intermediary. This trusted device intercepts all IO data and overlays secure UI on the display signal. Next, we look into Intel SGX and investigate how one can integrate a trusted path solution to TEEs. We notice that the relay attack on the SGX remote attestation can be detrimental to the trusted path security properties. We design ProximiTEE, a system that uses distance bounding to verify physical proximity to an SGX processor. We also show how the distance bounding mechanism can be used in a high frequency to allocate or revoke platforms in data centers without relying on an online PKI. Finally, we look into the disaggregated computing model of the modern data centers where the TEEs are insufficient as the computation is no longer limited to the CPU cores but several external devices such as GPUs, accelerators, etc. We propose our system PIE based on RISC-V architecture that combines the enclaves running on the CPU and firmware external hardware to a single attestable domain that we call platform-wide enclaves. Inside these platform-wide enclaves, individual binaries (enclaves and firmware) can be remotely attested.},
+  year={2021},
+  school={ETH Zurich},
+journal={PhD Thesis, ETH Zurich},
+html={https://www.research-collection.ethz.ch/handle/20.500.11850/487786},
+pdf={https://www.research-collection.ethz.ch/bitstream/handle/20.500.11850/487786/thesis_w_cover.pdf?sequence=2&isAllowed=y},
+selected={true}
+}
+
+
+
+@article{10.1109/MSEC.2020.2990230,
+author = {Kostiainen, Kari and Dhar, Aritra and Capkun, Srdjan},
+title = {Dedicated Security Chips in the Age of Secure Enclaves},
+year = {2020},
+issue_date = {Sept.-Oct. 2020},
+publisher = {IEEE Educational Activities Department},
+address = {USA},
+volume = {18},
+number = {5},
+issn = {1540-7993},
+url = {https://doi.org/10.1109/MSEC.2020.2990230},
+doi = {10.1109/MSEC.2020.2990230},
+abstract = {Secure enclave architectures have become prevalent in modern CPUs. Enclaves provide
+a flexible way to implement various hardware-assisted security services. But special-purpose
+security chips can still have advantages. Interestingly, dedicated security chips
+can also assist enclaves and improve their security.},
+journal = {IEEE Security and Privacy},
+selected={true},
+abbr={S&P Mag 2020},
+html={https://dl.acm.org/doi/10.1109/MSEC.2020.2990230},
+pdf={https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9095263},
+month = sep,
+pages = {38–46},
+numpages = {9}
+}
+
+
+
+@article{10.1145/3374664.3375726,
+author = {Dhar, Aritra and Puddu, Ivan and Kostiainen, Kari and Capkun, Srdjan},
+title = {ProximiTEE: Hardened SGX Attestation by Proximity Verification},
+year = {2020},
+isbn = {9781450371070},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3374664.3375726},
+doi = {10.1145/3374664.3375726},
+html={https://dl.acm.org/doi/10.1145/3374664.3375726},
+pdf={https://eprint.iacr.org/2018/902.pdf},
+abstract = {Intel SGX enables protected enclaves on untrusted computing platforms. An important
+part of SGX is its remote attestation mechanism that allows a remote verifier to check
+that the expected enclave was correctly initialized before provisioning secrets to
+it. However, SGX attestation is vulnerable to relay attacks where the attacker, using
+malicious software on the target platform, redirects the attestation and therefore
+the provisioning of confidential data to a platform that he physically controls. Although
+relay attacks have been known for a long time, their consequences have not been carefully
+examined. In this paper, we analyze relay attacks and show that redirection increases
+the adversary's abilities to compromise the enclave in several ways, enabling for
+instance physical and digital side-channel attacks that would not be otherwise possible.We
+propose ProximiTEE, a novel solution to prevent relay attacks. Our solution is based
+on a trusted embedded device that is attached to the target platform. Our device verifies
+the proximity of the attested enclave, thus allowing attestation to the intended enclave
+regardless of malicious software, such as a compromised OS, on the target platform.
+The device also performs periodic proximity verification which enables secure enclave
+revocation by detaching the device. Although proximity verification has been proposed
+as a defense against relay attacks before, this paper is the first to experimentally
+demonstrate that it can be secure and reliable for TEEs like SGX. Additionally, we
+consider a stronger adversary that has obtained leaked SGX attestation keys and emulates
+an enclave on the target platform. To address such emulation attacks, we propose a
+second solution where the target platform is securely initialized by booting it from
+the attached embedded device.},
+booktitle = {Proceedings of the Tenth ACM Conference on Data and Application Security and Privacy},
+pages = {5–16},
+numpages = {12},
+location = {New Orleans, LA, USA},
+journal = {CODASPY '20 (Best Paper Award)},
+abbr={CODASPY 2020},
+year={2020}
+}
+
+
+@article{DBLP:conf/ndss/DharUKC20,
+  author    = {Aritra Dhar and
+               Enis Ulqinaku and
+               Kari Kostiainen and
+               Srdjan Capkun},
+  title     = {ProtectIOn: Root-of-Trust for {IO} in Compromised Platforms},
+  journal = {27th Annual Network and Distributed System Security Symposium, {NDSS}},
+  publisher = {The Internet Society},
+  year      = {2020},
   selected={true},
-  inspirehep_id = {3255}
+  abbr={NDSS 2020},
+  abstract={Security and safety-critical remote applications such as e-voting, online banking, industrial control systems and medical devices rely upon user interaction that is typically performed through web applications. Trusted path to such remote systems is critical in the presence of an attacker that controls the computer that the user operates. Such an attacker can observe and modify any IO data without being detected by the user or the server. We investigate the security of previous research proposals and observe several drawbacks that make them vulnerable to attacks. Based on these observations we identify novel requirements for secure IO operation in the presence of a compromised host.
+<p></p>
+As a solution, we propose ProtectIOn, a system that ensures IO integrity using a trusted low-TCB device that sits between the attacker-controlled host and the IO devices. ProtectIOn intercepts the display signal and user inputs from the keyboard and mouse, and overlays secure UI on top of the HDMI frames generated by the untrusted host. The guiding design principles of ProtectIOn are that (i) integrity of user input and output cannot be considered separately, (ii) all user input modalities need to be protected simultaneously, and (iii) integrity protection should not rely on error prone user tasks like checking the presence of security indicators. By following these guidelines, ProtectIOn achieves strong protection for IO integrity. We also propose an extension of ProtectIOn for IO confidentiality and implement a plug-and-play prototype and evaluate its performance.},
+  pdf={https://www.ndss-symposium.org/wp-content/uploads/2020/02/24112-paper.pdf},
+  html={https://www.ndss-symposium.org/ndss-paper/protection-root-of-trust-for-io-in-compromised-platforms/},
+  url       = {https://www.ndss-symposium.org/ndss-paper/protection-root-of-trust-for-io-in-compromised-platforms/}
 }
 
-@article{einstein1905molekularkinetischen,
-  title={{\"U}ber die von der molekularkinetischen Theorie der W{\"a}rme geforderte Bewegung von in ruhenden Fl{\"u}ssigkeiten suspendierten Teilchen},
-  author={Einstein, A.},
-  journal={Annalen der physik},
-  volume={322},
-  number={8},
-  pages={549--560},
-  year={1905},
-  publisher={Wiley Online Library}
+@inproceedings{DBLP:conf/ndss/MavroudisWDKC20,
+  author    = {Vasilios Mavroudis and
+               Karl W{\"{u}}st and
+               Aritra Dhar and
+               Kari Kostiainen and
+               Srdjan Capkun},
+  title     = {Snappy: Fast On-chain Payments with Practical Collaterals},
+  journal = {27th Annual Network and Distributed System Security Symposium, {NDSS}},
+  year      = {2020},
+ abbr={NDSS 2020},
+abstract={Permissionless blockchains offer many advantages but also have significant limitations including high latency. This prevents their use in important scenarios such as retail payments, where merchants should approve payments fast. Prior works have attempted to mitigate this problem by moving transactions off the chain. However, such Layer-2 solutions have their own problems: payment channels require a separate deposit towards each merchant and thus significant locked-in funds from customers; payment hubs require very large operator deposits that depend on the number of customers; and side-chains require trusted validators.
+<p></p>
+In this paper, we propose Snappy, a novel solution that enables recipients, like merchants, to safely accept fast payments. In Snappy, all payments are on the chain, while small customer collaterals and moderate merchant collaterals act as payment guarantees. Besides receiving payments, merchants also act as statekeepers who collectively track and approve incoming payments using majority voting. In case of a double-spending attack, the victim merchant can recover lost funds either from the collateral of the malicious customer or a colluding statekeeper (merchant). Snappy overcomes the main problems of previous solutions: a single customer collateral can be used to shop with many merchants; merchant collaterals are independent of the number of customers; and validators do not have to be trusted. Our Ethereum prototype shows that safe, fast (<2 seconds) and cheap payments are possible on existing blockchains.},
+  html       = {https://www.ndss-symposium.org/ndss-paper/snappy-fast-on-chain-payments-with-practical-collaterals/},
+pdf={https://www.ndss-symposium.org/wp-content/uploads/2020/02/24049-paper.pdf},
+
 }
 
-@article{einstein1905movement,
-  abbr={Ann. Phys.},
-  title={Un the movement of small particles suspended in statiunary liquids required by the molecular-kinetic theory 0f heat},
-  author={Einstein, A.},
-  journal={Ann. Phys.},
-  volume={17},
-  pages={549--560},
-  year={1905}
+
+@article{DBLP:journals/corr/abs-2011-13979,
+  author    = {Ivo Sluganovic and
+               Enis Ulqinaku and
+               Aritra Dhar and
+               Daniele Lain and
+               Srdjan Capkun and
+               Ivan Martinovic},
+  title     = {IntegriScreen: Visually Supervising Remote User Interactions on Compromised
+               Clients},
+  journal   = {CoRR},
+  volume    = {abs/2011.13979},
+  year      = {2020},
+  url       = {https://arxiv.org/abs/2011.13979},
+  eprinttype = {arXiv},
+  eprint    = {2011.13979},
+  timestamp = {Tue, 01 Dec 2020 14:59:59 +0100},
+abstract={Remote services and applications that users access via their local clients (laptops or desktops) usually assume that, following a successful user authentication at the beginning of the session, all subsequent communication reflects the user's intent. However, this is not true if the adversary gains control of the client and can therefore manipulate what the user sees and what is sent to the remote server.
+To protect the user's communication with the remote server despite a potentially compromised local client, we propose the concept of continuous visual supervision by a second device equipped with a camera. Motivated by the rapid increase of the number of incoming devices with front-facing cameras, such as augmented reality headsets and smart home assistants, we build upon the core idea that the user's actual intended input is what is shown on the client's screen, despite what ends up being sent to the remote server. A statically positioned camera enabled device can, therefore, continuously analyze the client's screen to enforce that the client behaves honestly despite potentially being malicious.
+We evaluate the present-day feasibility and deployability of this concept by developing a fully functional prototype, running a host of experimental tests on three different mobile devices, and by conducting a user study in which we analyze participants' use of the system during various simulated attacks. Experimental evaluation indeed confirms the feasibility of the concept of visual supervision, given that the system consistently detects over 98% of evaluated attacks, while study participants with little instruction detect the remaining attacks with high probability.},
+html={https://arxiv.org/abs/2011.13979},
+pdf={https://arxiv.org/pdf/2011.13979.pdf},
+abbr={arXiv 2020},
+  biburl    = {https://dblp.org/rec/journals/corr/abs-2011-13979.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
 }
 
-@article{einstein1905electrodynamics,
-  title={On the electrodynamics of moving bodies},
-  author={Einstein, A.},
-  year={1905}
+
+@article{DBLP:conf/nsdi/SommerDMMRC19,
+  author    = {David M. Sommer and
+               Aritra Dhar and
+               Luka Malisa and
+               Esfandiar Mohammadi and
+               Daniel Ronzani and
+               Srdjan Capkun},
+  editor    = {Jay R. Lorch and
+               Minlan Yu},
+  title     = {Deniable Upload and Download via Passive Participation},
+  journal = {16th USENIX Symposium on Networked Systems Design and Implementation, NSDI},
+  pages     = {649--666},
+  publisher = {{USENIX} Association},
+  year      = {2019},
+abbr={NSDI 2019},
+  html       = {https://www.usenix.org/conference/nsdi19/presentation/sommer},
+pdf={https://www.usenix.org/system/files/nsdi19spring_sommer_prepub.pdf},
+abstract={Downloading or uploading controversial information can put users at risk, making them hesitant to access or share such information. While anonymous communication networks (ACNs) are designed to hide communication meta-data, already connecting to an ACN can raise suspicion. In order to enable plausible deniability while providing or accessing controversial information, we design CoverUp: a system that enables users to asynchronously upload and download data. The key idea is to involve visitors from a collaborating website. This website serves a JavaScript snippet, which, after user's consent produces cover traffic for the controversial site / content. This cover traffic is indistinguishable from the traffic of participants interested in the controversial content; hence, they can deny that they actually up- or downloaded any data.
+<p></p>
+CoverUp provides a feed-receiver that achieves a downlink rate of 10 to 50 Kbit/s. The indistinguishability guarantee of the feed-receiver holds against strong global network-level attackers who control everything except for the user's machine. We extend CoverUp to a full upload and download system with a rate of 10 up to 50 Kbit/s. In this case, we additionally need the integrity of the JavaScript snippet, for which we introduce a trusted party. The analysis of our prototype shows a very small timing leakage, even after half a year of continual observation. Finally, as passive participation raises ethical and legal concerns for the collaborating websites and the visitors of the collaborating website, we discuss these concerns and describe how they can be addressed.},
+  timestamp = {Tue, 02 Feb 2021 08:05:48 +0100},
+  biburl    = {https://dblp.org/rec/conf/nsdi/SommerDMMRC19.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
 }
 
-@Article{einstein1905photoelectriceffect,
-  bibtex_show={true},
-  abbr={Ann. Phys.},
-  title="{{\"U}ber einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt}",
-  author={Albert Einstein},
-  abstract={This is the abstract text.},
-  journal={Ann. Phys.},
-  volume={322},
-  number={6},
-  pages={132--148},
-  year={1905},
-  doi={10.1002/andp.19053220607},
-  award={Albert Einstein receveid the **Nobel Prize in Physics** 1921 *for his services to Theoretical Physics, and especially for his discovery of the law of the photoelectric effect*},
-  award_name={Nobel Prize}
+@article{DBLP:conf/rv/AllabadiDBP18,
+  author    = {Garvita Allabadi and
+               Aritra Dhar and
+               Ambreen Bashir and
+               Rahul Purandare},
+  title     = {METIS: Resource and Context-Aware Monitoring of Finite State Properties},
+  journal = {Runtime Verification - 18th International Conference, RV},
+  year      = {2018},
+html={https://link.springer.com/chapter/10.1007/978-3-030-03769-7_10},
+pdf={http://pag.iiitd.edu.in/sites/default/files/Allabadi18.pdf},
+abstract={Runtime monitoring of finite state properties may incur large and unpredictable overheads in terms of memory and execution time, which makes its deployment in a production environment challenging. In this work, we present a monitoring approach that investigates the trade-offs between memory overheads of monitoring, execution times of monitoring operations, and error reporting. Our approach is motivated by two key observations. First, there is a prominent behavioral redundancy among monitors. Second, the events on the same or related objects are often temporally segregated. We have implemented our approach in a prototype tool, Metis. Its evaluation indicates that it can reduce the memory footprint effectively and provide compact worst-case execution time bounds to monitoring operations with little to no compromise in error reporting.},
+  biburl    = {https://dblp.org/rec/conf/rv/AllabadiDBP18.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org},
+abbr={RV 2018},
 }
 
-@book{przibram1967letters,
-  bibtex_show={true},
-  title={Letters on wave mechanics},
-  author={Einstein, Albert and Schrödinger, Erwin and Planck, Max and Lorentz, Hendrik Antoon and Przibram, Karl},
-  year={1967},
-  publisher={Vision},
-  preview={wave-mechanics.gif},
-  abbr={Vision}
+@article{tulabandhula2020privacy,
+  title={Privacy preserving targeted advertising and recommendations},
+  author={Tulabandhula, Theja and Vaya, Shailesh and Dhar, Aritra},
+  journal={Journal of Business Analytics},
+  volume={3},
+  number={1},
+  pages={32--55},
+  year={2020},
+  publisher={Taylor \& Francis},
+ html={https://www.tandfonline.com/doi/abs/10.1080/2573234X.2020.1763862},
+abstract={Recommendation systems form the centerpiece of a rapidly growing trillion dollar online advertisement industry. Curating and storing profile information of users on web portals can seriously breach their privacy. Modifying such systems to achieve private recommendations without extensive redesign of the recommendation process typically requires communication of large encrypted information, making the whole process inefficient due to high latency. In this paper, we present an efficient recommendation system redesign, in which user profiles are maintained entirely on their device/web-browsers, and appropriate recommendations are fetched from web portals in an efficient privacy-preserving manner. We base this approach on precomputing compressed data structures from historical data and running low latency lookups when providing recommendations in real-time.},
+pdf={https://arxiv.org/pdf/1710.03275.pdf},
+abbr={JBA 2020},
+year={2020}
+}
+
+@article{DBLP:journals/iacr/DharYKC17,
+  author    = {Aritra Dhar and
+               Der{-}Yeuan Yu and
+               Kari Kostiainen and
+               Srdjan Capkun},
+  title     = {IntegriKey: End-to-End Integrity Protection of User Input},
+  journal   = {IACR Cryptol. ePrint Arch.},
+  pages     = {1245},
+  year      = {2017},
+  url       = {http://eprint.iacr.org/2017/1245},
+  timestamp = {Mon, 11 May 2020 15:54:51 +0200},
+  biburl    = {https://dblp.org/rec/journals/iacr/DharYKC17.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org},
+  html={https://eprint.iacr.org/2017/1245},
+  pdf={https://eprint.iacr.org/2017/1245.pdf},
+  abstract={Various safety-critical devices, such as industrial control systems, medical devices, and home automation systems, are configured through web interfaces from remote hosts that are standard PCs. The communication link from the host to the safety-critical device is typically easy to protect, but if the host gets compromised, the adversary can manipulate any user-provided configuration settings with severe consequences including safety violations. In this paper, we propose INTEGRIKEY, a novel systemforuserinputintegrity protection in compromised host. The user installs a simple plug-and-play device between the input peripheral and the host. This device observes user input events and sends a trace of them to the server that compares the trace to the application payload received from the untrusted host. To prevent subtle attacks where the adversary exchanges values from interchangeable input fields, we propose a labeling scheme where the user annotates input values. We built a prototype of INTEGRIKEY, using an embedded USB bridge, and our experiments show that such integrity protection adds only minordelay. WealsodevelopedaUI analysis toolthathelpsdeveloperstoprotecttheirservices and evaluated it on commercial safety-critical systems.},
+  abbr={ePrint Arch. 2017}
+}
+
+
+@article {203712,
+author = {Sinisa Matetic and Mansoor Ahmed and Kari Kostiainen and Aritra Dhar and David Sommer and Arthur Gervais and Ari Juels and Srdjan Capkun},
+title = {{ROTE}: Rollback Protection for Trusted Execution},
+journal = {26th USENIX Security Symposium (USENIX Security)},
+year = {2017},
+isbn = {978-1-931971-40-9},
+address = {Vancouver, BC},
+pages = {1289-1306},
+html = {https://www.usenix.org/conference/usenixsecurity17/technical-sessions/presentation/matetic},
+abstract={Security architectures such as Intel SGX need protection against rollback attacks, where the adversary violates the integrity of a protected application state by replaying old persistently stored data or by starting multiple application instances. Successful rollback attacks have serious consequences on applications such as financial services. In this paper, we propose a new approach for rollback protection on SGX. The intuition behind our approach is simple. A single platform cannot efficiently prevent rollback, but in many practical scenarios, multiple processors can be enrolled to assist each other. We design and implement a rollback protection system called ROTE that realizes integrity protection as a distributed system. We construct a model that captures adversarial ability to schedule enclave execution and show that our solution achieves a strong security property: the only way to violate integrity is to reset all participating platforms to their initial state. We implement ROTE and demonstrate that distributed rollback protection can provide significantly better performance than previously known solutions based on local non-volatile memory.},
+pdf={https://www.usenix.org/system/files/conference/usenixsecurity17/sec17-matetic.pdf},
+abbr={USENIX 2017}
+}
+
+
+
+@article{DBLP:conf/w4a/DharNY16,
+  author    = {Aritra Dhar and
+               Aditya Nittala and
+               Kuldeep Yadav},
+  editor    = {Gregory R. Gay and
+               Tiago Jo{\~{a}}o Guerreiro},
+  title     = {TactBack: VibroTactile braille output using smartphone and smartwatch
+               for visually impaired},
+  journal = {Proceedings of the 13th Web for All Conference, W4A},
+abbr={W4A 2016},
+  pages     = {13:1--13:2},
+  publisher = {{ACM}},
+  year      = {2016},
+html={https://dl.acm.org/doi/10.1145/2899475.2899514},
+abstract={In this paper, we present TactBack, a novel way to haptically represent braille characters on a off-the-shelf mobile device and a smartwatch using vibration. TactBack can be used for a wide variety of scenarios such as training braille characters to the deaf-blind, providing secure non-audio feedback for pin/password entry, and as an educational tool for learning braille. We discuss the details of design and implementation of TactBack, and report on a preliminary user study with 15 participants. Our evaluation shows that participants could recognize individual braille characters with minimal training using TactBack. We present some of the scenarios where TactBack could provide substantial benefit over traditional talkback.},
+  url       = {https://doi.org/10.1145/2899475.2899514},
+  doi       = {10.1145/2899475.2899514},
+  timestamp = {Tue, 06 Nov 2018 16:58:20 +0100},
+  biburl    = {https://dblp.org/rec/conf/w4a/DharNY16.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@article{DBLP:conf/sigsoft/DharPDR15,
+  author    = {Aritra Dhar and
+               Rahul Purandare and
+               Mohan Dhawan and
+               Suresh Rangaswamy},
+  editor    = {Elisabetta Di Nitto and
+               Mark Harman and
+               Patrick Heymans},
+  title     = {CLOTHO: saving programs from malformed strings and incorrect string-handling},
+  journal = {Proceedings of the 2015 10th Joint Meeting on Foundations of Software Engineering, ESEC/FSE},
+ abbr={FSE 2015},
+html={https://dl.acm.org/doi/10.1145/2786805.2786877},
+abstract={Software is susceptible to malformed data originating from untrusted sources. Occasionally the programming logic or constructs used are inappropriate to handle the varied constraints imposed by legal and well-formed data. Consequently, softwares may produce unexpected results or even crash. In this paper, we present CLOTHO, a novel hybrid approach that saves such softwares from crashing when failures originate from malformed strings or inappropriate handling of strings. CLOTHO statically analyses a program to identify statements that are vulnerable to failures related to associated string data. CLOTHO then generates patches that are likely to satisfy constraints on the data, and in case of failures produces program behavior which would be close to the expected. The precision of the patches is improved with the help of a dynamic analysis. We have implemented CLOTHO for the JAVA String API, and our evaluation based on several popular open-source libraries shows that CLOTHO generates patches that are semantically similar to the patches generated by the programmers in the later versions. Additionally, these patches are activated only when a failure is detected, and thus CLOTHO incurs no runtime overhead during normal execution, and negligible overhead in case of failures.},
+  year      = {2015},
+  url       = {https://doi.org/10.1145/2786805.2786877},
+  doi       = {10.1145/2786805.2786877},
+  timestamp = {Tue, 06 Nov 2018 16:59:22 +0100},
+  biburl    = {https://dblp.org/rec/conf/sigsoft/DharPDR15.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@article{DBLP:conf/fc/SaxenaMD14,
+  author    = {Amitabh Saxena and
+               Janardan Misra and
+               Aritra Dhar},
+  editor    = {Rainer B{\"{o}}hme and
+               Michael Brenner and
+               Tyler Moore and
+               Matthew Smith},
+  title     = {Increasing Anonymity in Bitcoin},
+  journal = {Financial Cryptography and Data Security - {FC} 2014 Workshops, BITCOIN},
+pdf={https://www.researchgate.net/publication/272475770_Increasing_Anonymity_in_Bitcoin#fullTextFileContent},
+abstract={Bitcoin prevents double-spending using the blockchain, a public ledger kept with every client. Every single transaction till date is present in this ledger. Due to this, true anonymity is not present in bitcoin. We present a method to enhance anonymity in bitcoin-type cryptocurrencies. In the blockchain, each block holds a list of transactions linking the sending and receiving addresses. In our modified protocol the transactions (and blocks) do not contain any such links. Using this, we obtain a far higher degree of anonymity. Our method uses a new primitive known as composite signatures. Our security is based on the hardness of the Computation Diffie-Hellman assumption in bilinear maps.},
+abbr={FC 2014},
+  series    = {Lecture Notes in Computer Science},
+  volume    = {8438},
+  pages     = {122--139},
+  publisher = {Springer},
+  year      = {2014},
+  url       = {https://doi.org/10.1007/978-3-662-44774-1\_9},
+  doi       = {10.1007/978-3-662-44774-1\_9},
+  timestamp = {Wed, 12 Aug 2020 17:59:02 +0200},
+  biburl    = {https://dblp.org/rec/conf/fc/SaxenaMD14.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@article{DBLP:conf/ict-eurasia/SarkarD13,
+  author    = {Pinaki Sarkar and
+               Aritra Dhar},
+  editor    = {Khabib Mustofa and
+               Erich J. Neuhold and
+               A Min Tjoa and
+               Edgar R. Weippl and
+               Ilsun You},
+  title     = {Code Based {KPD} Scheme with Full Connectivity: Deterministic Merging},
+  journal = {Information and Communicatiaon Technology - International Conference,
+               ICT-EurAsia},
+  series    = {Lecture Notes in Computer Science},
+  volume    = {7804},
+  pages     = {141--151},
+  publisher = {Springer},
+  year      = {2013},
+ abbr={ICT-EurAsia 2013},
+  url       = {https://doi.org/10.1007/978-3-642-36818-9\_15},
+  doi       = {10.1007/978-3-642-36818-9\_15},
+  timestamp = {Tue, 14 May 2019 10:00:38 +0200},
+  biburl    = {https://dblp.org/rec/conf/ict-eurasia/SarkarD13.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@article{DBLP:conf/mobihoc/SarkarRD13,
+  author    = {Pinaki Sarkar and
+               Brijesh Kumar Rai and
+               Aritra Dhar},
+  editor    = {A. Chockalingam and
+               D. Manjunath and
+               Massimo Franceschetti and
+               Leandros Tassiulas},
+  title     = {Connecting, scaling and securing {RS} code and {TD} based KPDs in
+               WSNs: deterministic merging},
+  journal = {The Fourteenth {ACM} International Symposium on Mobile Ad Hoc Networking
+               and Computing, MobiHoc},
+  pages     = {301--304},
+  publisher = {{ACM}},
+  year      = {2013},
+ abbr={MobiHoc 2013},
+  url       = {https://doi.org/10.1145/2491288.2491329},
+  doi       = {10.1145/2491288.2491329},
+  timestamp = {Tue, 06 Nov 2018 11:07:07 +0100},
+  biburl    = {https://dblp.org/rec/conf/mobihoc/SarkarRD13.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@article{DBLP:conf/isw/BagDS12,
+  author    = {Samiran Bag and
+               Aritra Dhar and
+               Pinaki Sarkar},
+  editor    = {Dieter Gollmann and
+               Felix C. Freiling},
+  title     = {100{\%} Connectivity for Location Aware Code Based {KPD} in Clustered
+               {WSN:} Merging Blocks},
+  journal = {Information Security - 15th International Conference, ISC},
+  series    = {Lecture Notes in Computer Science},
+  volume    = {7483},
+  pages     = {136--150},
+  publisher = {Springer},
+ abbr={ISC 2012},
+  year      = {2012},
+  url       = {https://doi.org/10.1007/978-3-642-33383-5\_9},
+  doi       = {10.1007/978-3-642-33383-5\_9},
+  timestamp = {Tue, 14 May 2019 10:00:53 +0200},
+  biburl    = {https://dblp.org/rec/conf/isw/BagDS12.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
 }

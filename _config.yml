@@ -4,7 +4,7 @@
 
 title: Aritra Dhar - Personal Webpage # the website title (if blank, full name will be used instead)
 first_name: Aritra
-middle_name: 
+middle_name:
 last_name: Dhar
 email: aritra.dhar7@gmail.com
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
@@ -16,11 +16,10 @@ footer_text: >
 # icon: 🎓 # the emoji used as the favicon
 icon: 🦖
 url: https://aritradhar.github.io # the base hostname & protocol for your site
-baseurl:  # the subpath of your site, e.g. /blog/
+baseurl: # the subpath of your site, e.g. /blog/
 last_updated: true # set to true if you want to display last updated in the footer
-impressum_path:  # set to path to include impressum link in the footer, use the same path as permalink in a page, helps to conform with EU GDPR
+impressum_path: # set to path to include impressum link in the footer, use the same path as permalink in a page, helps to conform with EU GDPR
 back_to_top: true # set to false to disable the back to top button
-
 
 # Theme
 # -----------------------------------------------------------------------------
@@ -80,8 +79,6 @@ openpanel_analytics: # your Openpanel analytics client ID (format: XXXXXXXX-XXXX
 google_site_verification: # your google-site-verification ID (Google Search Console)
 bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 
-
-
 # -----------------------------------------------------------------------------
 # Social integration
 # -----------------------------------------------------------------------------
@@ -103,9 +100,7 @@ wikidata_id: # your wikidata id
 dblp_url: # your DBLP profile url
 stackoverflow_id: #your stackoverflow id
 
-contact_note: 
-
-
+contact_note:
 
 # -----------------------------------------------------------------------------
 # Blog
@@ -133,7 +128,6 @@ giscus:
   theme: preferred_color_scheme # name of the color scheme (preferred works well with al-folio light/dark mode)
   emit_metadata: 0
   lang: en
-
 
   # -----------------------------------------------------------------------------
 # Newsletter
@@ -340,7 +334,7 @@ filtered_bibtex_keywords:
   ]
 
 # Maximum number of authors to be shown for each publication (more authors are visible on click)
-max_author_limit: 3 # leave blank to always show all authors
+max_author_limit:  # leave blank to always show all authors
 more_authors_animation_delay: 10 # more authors are revealed on click using animation; smaller delay means faster animation
 
 # Enables publication thumbnails. If disabled, none of the publications will display thumbnails, even if specified in the bib entry.

@@ -20,7 +20,7 @@ social: true # includes social icons at the bottom of the page
 
 # Short bio
 
----
+test
 
 I am a Principal Researcher in Hardware Security at Computing Systems Lab, Huawei Zurich research center since August 2021. my primary research focus is on trusted computing for large-scale distributed computing architecture and AI security.
 I received my Ph.D. degree in Computer Science in the [System Security research group](https://syssec.ethz.ch/) at [ETH Zurich](https://ethz.ch/en.html) with [Prof. Dr. Srdjan Capkun](https://syssec.ethz.ch/people/capkun.html) in 2021. My general research interest includes trusted paths, trusted execution environments, cyber-physical systems, and anonymous networks. Before joining ETH Zurich, I was a Research Engineer at Xerox Research Center India (now known as Conduent Labs India), Bangalore, in the data analytics research group. I led multiple research projects on privacy-preserving recommendation systems and designing systems for visually impaired people using wearable devices. I received my masters in Computer Science and Engineering from [IIIT-Delhi](https://www.iiitd.ac.in/).

@@ -1,3 +1,14 @@
+@article{dhar2025guardain,
+ title={GuardAIn: Protecting Emerging Generative AI Workloads on Heterogeneous NPU}, 
+      author={Dhar, Aritra and Thorens, Clément and Magdalena Lazier, Lara  and Cavigelli, Lukas},
+      year={2025},
+      abstract = {Driven by recent advances in large language models (LLM), generative AI applications have become the dominant workload for the modern cloud. Specialized hardware accelerators, such as GPUs, NPUs, and TPUs, play a key role in AI adoption due to their superior performance over general-purpose CPUs. AI models and the data are often highly sensitive and come from mutually distrusting parties. Existing industry-standard CPU-based TEEs, such as Intel SGX or AMD SEV, do not adequately protect these accelerators. Device-TEEs like Nvidia-CC only address tightly coupled CPU-GPU systems with a proprietary solution requiring TEE on the host CPU side. On the other hand, existing academic proposals target specific CPU-TEE platforms.
+      <p></p>
+      To address this gap, we propose GuardAIn, a confidential computing architecture for discrete NPU devices that requires no trust in the host system. GuardAIn secures data, model parameters, and operator binaries through authenticated encryption. GuardAIn uses delegation-based memory semantics to ensure isolation from the host software stack, and task attestation guarantees strong model integrity. Our GuardAIn implementation and evaluation with state-of-the-art LLMs such as Llama2 and Llama3 shows that GuardAIn introduces minimal overhead with no changes in the AI software stack.},
+      abbr={S&P 2025},
+      selected = {true}
+}
+
 
 @article{dhar2024acsac,
       title={Confidential Computing with Heterogeneous Devices at Cloud-Scale},

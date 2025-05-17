@@ -1,13 +1,12 @@
 @article{dhar2025guardain,
  title={GuardAIn: Protecting Emerging Generative AI Workloads on Heterogeneous NPU}, 
-      author={Dhar, Aritra and Thorens, Clément and Magdalena Lazier, Lara  and Cavigelli, Lukas},
+      author={Dhar, Aritra and Thorens, Clement and Magdalena Lazier, Lara  and Cavigelli, Lukas},
       year={2025},
       abstract = {Driven by recent advances in large language models (LLM), generative AI applications have become the dominant workload for the modern cloud. Specialized hardware accelerators, such as GPUs, NPUs, and TPUs, play a key role in AI adoption due to their superior performance over general-purpose CPUs. AI models and the data are often highly sensitive and come from mutually distrusting parties. Existing industry-standard CPU-based TEEs, such as Intel SGX or AMD SEV, do not adequately protect these accelerators. Device-TEEs like Nvidia-CC only address tightly coupled CPU-GPU systems with a proprietary solution requiring TEE on the host CPU side. On the other hand, existing academic proposals target specific CPU-TEE platforms.
       <p></p>
       To address this gap, we propose GuardAIn, a confidential computing architecture for discrete NPU devices that requires no trust in the host system. GuardAIn secures data, model parameters, and operator binaries through authenticated encryption. GuardAIn uses delegation-based memory semantics to ensure isolation from the host software stack, and task attestation guarantees strong model integrity. Our GuardAIn implementation and evaluation with state-of-the-art LLMs such as Llama2 and Llama3 shows that GuardAIn introduces minimal overhead with no changes in the AI software stack.},
       abbr={S&P 2025}, 
       html={https://www.computer.org/csdl/proceedings-article/sp/2025/223600d823/26hiVLrJZi8},
-      url={https://www.computer.org/csdl/proceedings-article/sp/2025/223600d823/26hiVLrJZi8},
       pdf={https://www.computer.org/csdl/pds/api/csdl/proceedings/download-article/26hiVLrJZi8/pdf},
       selected = {true}
 }
@@ -22,14 +21,13 @@
 We address this gap by proposing a new dedicated hardware module, the security controller (SC), that acts as the TEE proxy for the legacy non-TEE DSA nodes in a data center across racks. SC enforces access control and attestation mechanisms and protects the non-TEE nodes even from a physical attacker. 
 This way, SC enables new-generation TEE-enabled nodes and legacy non-TEE nodes to be used in a data center simultaneously while ensuring security.
 We implement and synthesize SC hardware and evaluate it with real-world cloud-centric workloads with heterogeneous DSAs. Our evaluation shows that, on average, SC introduces 1.5-5% overhead while running AI, Redis, and file system workloads and scales well with an increasing number of DSA nodes (up to 2236 concurrent NPUs running CNNs).},
-      booktitle={ACSAC 2024 (to appear)},
+      booktitle={ACSAC 2024},
       journal={ACSAC 2024},
       organization={Applied Computer Security Associates (ACSA)},
       year={2024},
       abbr={ACSAC 2024},
       html={https://ieeexplore.ieee.org/document/10917655},
       pdf={https://www.shwetashinde.org/publications/cloudscale_acsac24.pdf}
-      url={https://ieeexplore.ieee.org/document/10917655},
       selected={true}
 
 }
@@ -48,7 +46,6 @@ To address this gap, we propose Ascend-CC, a confidential computing architecture
       abbr={arXiv 2024},
       html = {https://arxiv.org/abs/2407.11888},
       pdf = {https://arxiv.org/abs/2407.11888.pdf},
-      url={https://arxiv.org/abs/2407.11888}, 
       selected = {true}
 }
 

@@ -1,3 +1,22 @@
+@article{lazier2025aclora,
+ title={AC-LoRA: (Almost) Training-Free Access Control-Aware Multi-Modal LLMs}, 
+      author={Magdalena Lazier, Lara and Dhar, Aritra and Stambolic, Vasilije  and Cavigelli, Lukas},
+      year={2025},
+      abstract = {Corporate LLMs are gaining traction for efficient knowledge dissemination and management within organizations. 
+However, as current LLMs are vulnerable to leaking sensitive information, it has proven difficult to apply them in settings where strict access control is necessary.
+To this end, we design AC-LoRA, an end-to-end system for access control-aware corporate LLM chatbots that maintains a strong information isolation guarantee.
+AC-LoRA maintains separate LoRA adapters for permissioned datasets, along with the document embedding they are finetuned on.
+AC-LoRA retrieves a precise set of LoRA adapters based on the similarity score with the user query and their permission.
+This similarity score is later used to merge the responses if more than one LoRA is retrieved, without requiring any additional training for LoRA routing.
+We provide an end-to-end prototype of AC-LoRA, evaluate it on two datasets, and show that AC-LoRA matches
+or even exceeds the performance of state-of-the-art LoRA mixing techniques while providing strong isolation guarantees.
+Furthermore, we show that AC-LoRA design can be directly applied to different modalities.}
+      abbr={arXiv 2025}, 
+      html={https://arxiv.org/abs/2505.11557},
+      pdf={https://arxiv.org/pdf/2505.11557},
+      selected = {true}
+}
+
 @article{dhar2025guardain,
  title={GuardAIn: Protecting Emerging Generative AI Workloads on Heterogeneous NPU}, 
       author={Dhar, Aritra and Thorens, Clement and Magdalena Lazier, Lara  and Cavigelli, Lukas},

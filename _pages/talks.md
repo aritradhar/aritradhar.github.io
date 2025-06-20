@@ -5,9 +5,11 @@ title: Talks
 description: Some of the talks on my reserch projects over the years.
 nav: true
 ---
-
+- GuardAIn: Protecting Emerging Generative AI Workloads on Heterogeneous NPU
+  (2024)
+  - S&P 2025, San Francisco, USA
 - Ascend-CC: Confidential Computing on Heterogeneous NPU for Emerging Generative AI Workloads
-  (2023)
+  (2024)
   - ZISC lunch seminer, Institute of Information Security, ETH Zurich
 - Confidential Computing with Heterogeneous Devices at Cloud-Scale (2024)
   - ACSAC 2024, Honolulu, Hawaii, USA

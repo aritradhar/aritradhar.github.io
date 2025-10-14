@@ -7,7 +7,7 @@ nav: true
 ---
 
 - GuardAIn: Protecting Emerging Generative AI Workloads on Heterogeneous NPU
-  (2024)
+  (2025)
   - S&P 2025, San Francisco, USA
 - Ascend-CC: Confidential Computing on Heterogeneous NPU for Emerging Generative AI Workloads
   (2024)

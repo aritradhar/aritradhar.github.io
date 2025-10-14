@@ -1,3 +1,15 @@
+@article{Stambolic2025ragpull,
+ title={RAG-Pull: Imperceptible Attacks on RAG Systems for Code Generation}, 
+      author={Stambolic, Vasilije and Dhar, Aritra and Cavigelli, Lukas},
+      year={2025},
+      abstract = {Retrieval-Augmented Generation (RAG) increases the reliability and trustworthiness of the LLM response and reduces hallucination by eliminating the need for model retraining. It does so by adding external data into the LLM's context. We develop a new class of black-box attack, RAG-Pull, that inserts hidden UTF characters into queries or external code repositories, redirecting retrieval toward malicious code, thereby breaking the models' safety alignment. We observe that query and code perturbations alone can shift retrieval toward attacker-controlled snippets, while combined query-and-target perturbations achieve near-perfect success. Once retrieved, these snippets introduce exploitable vulnerabilities such as remote code execution and SQL injection. RAG-Pull's minimal perturbations can alter the model's safety alignment and increase preference towards unsafe code, therefore opening up a new class of attacks on LLMs..},
+      abbr={arXiv 2025}, 
+      html={https://arxiv.org/abs/2510.11195v1},
+      pdf={https://arxiv.org/pdf/2510.11195v1},
+      selected = {true}
+}
+
+
 @article{lazier2025aclora,
  title={AC-LoRA: (Almost) Training-Free Access Control-Aware Multi-Modal LLMs}, 
       author={Magdalena Lazier, Lara and Dhar, Aritra and Stambolic, Vasilije  and Cavigelli, Lukas},
@@ -11,6 +23,7 @@ This similarity score is later used to merge the responses if more than one LoRA
 We provide an end-to-end prototype of AC-LoRA, evaluate it on two datasets, and show that AC-LoRA matches or even exceeds the performance of state-of-the-art LoRA mixing techniques while providing strong isolation guarantees.
 Furthermore, we show that AC-LoRA design can be directly applied to different modalities.},
       abbr={NeurIPS 2025}, 
+      code={https://github.com/huawei-csl/AC-LoRA},
       html={https://github.com/huawei-csl/AC-LoRA},
       pdf={https://arxiv.org/pdf/2505.11557},
       selected = {true}

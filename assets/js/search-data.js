@@ -129,11 +129,18 @@ ninja.data = [{
           window.open("mailto:%61%72%69%74%72%61{%64%6F%74}%64%68%61%72%37@%67%6D%61%69%6C.%63%6F%6D", "_blank");
         },
       },{
+        id: 'social-github',
+        title: 'GitHub',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://github.com/aritradhar", "_blank");
+        },
+      },{
         id: 'social-linkedin',
         title: 'LinkedIn',
         section: 'Socials',
         handler: () => {
-          window.open("https://www.linkedin.com/in/aritradhar# your LinkedIn user name", "_blank");
+          window.open("https://www.linkedin.com/in/aritradhar", "_blank");
         },
       },{
         id: 'social-rss',
